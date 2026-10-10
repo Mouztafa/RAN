@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light">
-<title>RAN Operations | Network Tools</title>
+<title>RAN Operations | STC</title>
 <style>
 :root{--bg:#080f1d;--panel:#101a2d;--panel2:#132139;--stroke:#26354f;--muted:#9aaecb;--text:#eff5ff;--blue:#5e9cff;--light:#89b8ff;--green:#42cea5;--red:#fb8291;--gold:#eabc66;--radius:15px}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 Inter,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}a{color:var(--light)}.shell{min-height:100vh;display:grid;grid-template-columns:242px minmax(0,1fr)}.sidebar{background:#0d1728;border-right:1px solid var(--stroke);padding:24px 13px;display:flex;flex-direction:column;gap:25px;position:sticky;top:0;height:100vh}.brand{display:flex;align-items:center;gap:12px;padding:0 13px}.brand-icon{width:40px;height:40px;display:grid;place-items:center;border-radius:12px;background:#183767;color:#c5dcff;font-size:19px;font-weight:800;border:1px solid #426397}.brand b{display:block;font-size:17px;letter-spacing:-.5px}.brand small{color:var(--muted);font-size:11px}.nav-label,.eyebrow{font-size:10px;letter-spacing:1.5px;color:var(--muted);font-weight:800;text-transform:uppercase}.nav-label{padding:0 13px;margin-bottom:12px}.nav{display:grid;gap:5px}.nav button{background:transparent;border:1px solid transparent;padding:12px 14px;display:flex;align-items:center;gap:11px;text-align:left;color:#a6bad7;border-radius:10px;font-weight:600}.nav button:hover{background:#15243b;color:white}.nav button.active{color:#eff5ff;background:#1c3455;border-color:#32537d}.nav .nav-num{color:#89bbff;font-weight:800;letter-spacing:1px;font-size:10px}.side-note{margin-top:auto;border:1px solid #30425f;background:#13223a;border-radius:12px;padding:13px;font-size:12px;color:var(--muted)}.side-note b{color:var(--text);display:block;margin-bottom:4px}.main{min-width:0}.topbar{min-height:77px;border-bottom:1px solid var(--stroke);padding:15px clamp(20px,4vw,48px);display:flex;align-items:center;justify-content:space-between;gap:15px}.topbar strong{font-size:13px;letter-spacing:.2px}.tag{background:#132b40;border:1px solid #245777;border-radius:20px;color:#93cfeb;padding:5px 11px;font-size:11px;white-space:nowrap}.content{max-width:1510px;margin:auto;padding:31px clamp(18px,4vw,48px) 70px}.view{display:none}.view.active{display:block}.view-head{margin-bottom:24px;display:flex;justify-content:space-between;align-items:flex-end;gap:18px}.view-head h1{font-size:30px;line-height:1.2;letter-spacing:-1.15px;margin:7px 0 8px}.view-head p{margin:0;color:var(--muted)}.chips{display:flex;gap:8px;flex-wrap:wrap}.chip{padding:6px 10px;border-radius:8px;background:#15273d;border:1px solid #2b4460;font-size:12px;color:#c1d4ea}.layout{display:grid;grid-template-columns:minmax(350px,.94fr) minmax(420px,1.06fr);gap:20px}.card{border-radius:var(--radius);border:1px solid var(--stroke);background:var(--panel);overflow:hidden;min-width:0}.card-header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--stroke);padding:17px 20px;gap:10px}.card-header h2{margin:0;font-size:15px;letter-spacing:-.2px}.card-header span{color:var(--muted);font-size:11px}.card-body{padding:21px}.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.field{margin-bottom:16px;min-width:0}.field label{display:block;font-weight:650;color:#c4d2e9;font-size:12px;margin-bottom:7px}.field input,.field select,.field textarea{color:var(--text);border:1px solid #34455e;background:#0b1526;border-radius:9px;padding:11px 12px;width:100%;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px #5e9cff25}.field input::placeholder,.field textarea::placeholder{color:#7186a4}.field textarea{min-height:94px;resize:vertical}.field select{appearance:auto}.field small{display:block;color:var(--muted);font-size:11px;margin-top:6px}.mini-status{border-radius:10px;border:1px solid #2d4761;background:#12233a;padding:10px 12px;color:#b5d1e7;font-size:12px;margin:2px 0 17px}.mini-status.warn{border-color:#735b2e;background:#2c251a;color:#eacb88}.mini-status.error{border-color:#783b4b;background:#381d2a;color:#ffc6cf}.btnrow{display:flex;align-items:center;flex-wrap:wrap;gap:9px}.btn{border:1px solid #39506d;border-radius:9px;padding:10px 14px;background:#20324d;color:#e3f0ff;font-weight:650}.btn:hover{filter:brightness(1.15)}.btn-primary{background:#4c8cf1;border-color:#73a4ff;color:#fff}.btn-green{background:#185c53;border-color:#267d70;color:#c9ffee}.btn-ghost{background:#17263d}.btn:disabled{opacity:.5;cursor:not-allowed}.output{position:relative;margin-bottom:17px}.output:last-child{margin-bottom:0}.output-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:7px}.output-heading b{font-size:12px;color:#cbdcf2}.output-heading button{padding:5px 10px;font-size:11px}.output textarea{min-height:210px;display:block;width:100%;background:#0b1525;color:#e4eeff;border:1px solid #2c415e;border-radius:10px;padding:15px;font:12px/1.65 'Consolas','SFMono-Regular',monospace;resize:vertical;white-space:pre-wrap}.output.tall textarea{min-height:310px}.note{margin:13px 0 0;color:var(--muted);font-size:12px}.stat-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin-bottom:20px}.stat{border:1px solid var(--stroke);border-radius:12px;padding:16px;background:var(--panel)}.stat strong{display:block;font-size:23px;font-weight:800;letter-spacing:-.6px}.stat small{color:var(--muted)}.dual-stack{display:grid;gap:17px}.topology{min-height:130px;background:#0a1526;border:1px solid var(--stroke);border-radius:10px;padding:9px;overflow:auto}.topology svg{width:100%;min-width:360px;height:auto;max-height:300px}.legacy-toolbar{display:flex;flex-wrap:wrap;align-items:end;gap:12px;border:1px solid var(--stroke);padding:13px 16px;border-radius:12px;background:var(--panel);margin-bottom:15px}.legacy-toolbar .field{margin:0;width:190px}.legacy-frame{width:100%;height:75vh;min-height:630px;border:1px solid var(--stroke);background:white;border-radius:14px}.empty{background:#0b1727;border:1px dashed #3a5370;padding:22px;border-radius:12px;color:#bacce4}.warn-note{border:1px solid #7c5b2b;border-left:4px solid #e0ad52;background:#292216;color:#f0d9a7;border-radius:10px;padding:13px 16px;font-size:12px;margin:15px 0}.success-note{border:1px solid #2b6e5f;background:#102b29;padding:12px 16px;color:#9ce7d2;border-radius:10px;margin:15px 0;font-size:12px}.summary-list{display:flex;flex-wrap:wrap;gap:8px}.summary-list span{padding:6px 10px;background:#1a304b;border-radius:7px;border:1px solid #2c4a71;color:#c6d9f1;font-size:12px}#masterDiff{font-size:12px;white-space:pre-wrap;word-break:break-word;margin:10px 0 0;max-height:370px;overflow:auto;padding:15px;border-radius:11px;border:1px solid #2b3e59;background:#0a1526;color:#b9cce4}.footerline{font-size:11px;color:#7487a4;margin-top:21px}.settings-cols{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.hidden{display:none!important}@media(max-width:1180px){.layout{grid-template-columns:1fr}.settings-cols{grid-template-columns:1fr}}@media(max-width:750px){.shell{display:block}.sidebar{position:static;height:auto;gap:9px;padding:13px}.brand{padding:0 5px}.sidebar .nav-label,.side-note{display:none}.nav{display:flex;overflow:auto;padding-top:5px}.nav button{white-space:nowrap;padding:9px 11px}.content{padding:25px 15px}.view-head{display:block}.view-head h1{font-size:24px}.grid-2{grid-template-columns:1fr}.stat-row{grid-template-columns:repeat(2,minmax(0,1fr))}.topbar{padding:12px 16px}.layout{display:block}.layout>.card{margin-bottom:16px}.legacy-frame{min-height:600px}}@media print{.sidebar,.topbar,.btnrow{display:none}.shell{display:block}.view{display:block!important}}
 [hidden]{display:none!important} .header-import{margin-left:auto;margin-right:12px} @media(max-width:750px){.header-import{margin:0}}
@@ -573,11 +573,350 @@ body.wa-single-scroll #waSyncInfo{white-space:nowrap;overflow:hidden;text-overfl
 /* Import Master: a single uncluttered panel now that publishing instructions are removed. */
 .content .settings-cols{grid-template-columns:minmax(0,1fr)!important;max-width:100%}
 </style>
+
+<style id="kuwait-status-styles">
+#view-kuwait{--kw-purple:#7030a0;--kw-red:#d63d59;--kw-orange:#e5a747;--kw-teal:#13a985;--kw-navy:#27163c}
+#view-kuwait .kw-view-head{align-items:center;margin:0 0 12px}
+#view-kuwait .kw-view-chips{display:flex;flex-wrap:wrap;gap:8px}
+#view-kuwait .kw-source-card{margin-bottom:12px}
+#view-kuwait .kw-source-card .card-header{padding:10px 16px}
+#view-kuwait .kw-sources{display:flex;gap:10px;align-items:end;flex-wrap:wrap;padding:12px 16px}
+#view-kuwait .kw-sources .field{margin:0;flex:1 1 235px;min-width:0}
+#view-kuwait .kw-sources .field label{margin:0 0 4px}
+#view-kuwait input[type=file]{padding:7px;font-size:12px;min-width:0}
+#view-kuwait input[type=file]::file-selector-button{border:0;border-radius:6px;color:white;background:#7030a0;padding:7px 11px;margin-right:8px;cursor:pointer}
+#view-kuwait .kw-sources button{white-space:nowrap}
+#view-kuwait .kw-notice{border:1px solid #d4c4df;background:#f7f1fb;color:#4b3560;font-size:12px;padding:10px 14px;border-radius:10px;margin:0 0 12px;line-height:1.45}
+#view-kuwait .kw-warning{color:#754b18;border-color:#ebcf97;background:#fff7e8}
+#view-kuwait .kw-error{color:#a3243c;border-color:#efc1cb;background:#fff1f4}
+#view-kuwait .kw-success{color:#146b54;border-color:#b4e3d4;background:#edfaf4}
+#view-kuwait .kw-stat-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:0 0 14px}
+#view-kuwait .kw-stat{border:1px solid #e4dce9;border-radius:12px;background:#fff;padding:13px 15px;min-width:0;box-shadow:0 3px 12px #2a123509}
+#view-kuwait .kw-stat span{font-size:11px;font-weight:700;color:#73627e;display:block}
+#view-kuwait .kw-stat strong{display:block;font-size:30px;line-height:1.25;color:#311c49;font-weight:850}
+#view-kuwait .kw-stat small{font-size:10px;color:#887b91}
+#view-kuwait .kw-stat-moc{background:#f6f1fa}
+#view-kuwait .kw-dashboard-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.06fr);gap:14px;margin-bottom:14px;align-items:start}
+#view-kuwait .card{min-width:0}
+#view-kuwait .kw-dashboard-layout .card-header,#view-kuwait .kw-moc-card .card-header{padding:12px 16px}
+#view-kuwait .kw-dashboard-layout .card-body,#view-kuwait .kw-moc-card .card-body{padding:15px}
+#view-kuwait .kw-area-controls{display:grid;grid-template-columns:1fr 155px;gap:8px;margin-bottom:12px}
+#view-kuwait .kw-area-controls input,#view-kuwait .kw-area-controls select,#view-kuwait .kw-moc-tools input,#view-kuwait .kw-moc-tools select{height:38px;border:1px solid #ded4e7;background:white;color:#342943;border-radius:8px;padding:7px 11px;width:100%;min-width:0}
+#view-kuwait .kw-legend{display:flex;flex-wrap:wrap;align-items:center;gap:15px;font-size:11px;color:#625873;margin-bottom:13px}
+#view-kuwait .kw-legend>span{display:inline-flex;align-items:center;gap:5px}
+#view-kuwait .kw-key{width:10px;height:10px;border-radius:3px;display:inline-block;background:#c8b8d8}
+#view-kuwait .kw-key-down{background:#e45d72}#view-kuwait .kw-key-power{background:#e1a043}#view-kuwait .kw-key-temp{background:#7645b3}
+#view-kuwait .kw-key-ok{background:#13a985}#view-kuwait .kw-key-alert{background:#e35269}#view-kuwait .kw-key-unverified{background:#e7b95a}
+#view-kuwait .kw-area-bars{max-height:516px;overflow:auto;padding-right:4px;scrollbar-color:#cfb7dc transparent}
+#view-kuwait .kw-area-row{border:1px solid #ebe4f1;border-radius:10px;background:#fff;padding:11px 12px;margin:0 0 8px;cursor:pointer;width:100%;color:#322940;text-align:left;transition:border-color .15s}
+#view-kuwait .kw-area-row:hover,#view-kuwait .kw-area-row[aria-pressed=true]{border-color:#a47ac0;background:#fcf8ff}
+#view-kuwait .kw-area-name{display:flex;justify-content:space-between;gap:9px;align-items:start;white-space:normal;font-size:12px;font-weight:780;margin-bottom:7px}
+#view-kuwait .kw-area-name b{color:#6e4594;font-size:11px;white-space:nowrap}
+#view-kuwait .kw-area-meter{display:flex;height:9px;gap:3px;background:#f4edf7;border-radius:4px;overflow:hidden}
+#view-kuwait .kw-area-meter i{display:block;border-radius:3px;min-width:0;transition:width .2s}
+#view-kuwait .kw-area-desc{display:flex;gap:10px;flex-wrap:wrap;color:#83758c;font-size:10px;margin-top:7px}
+#view-kuwait .kw-small-muted{font-size:10px;color:#8c7b97;line-height:1.5;margin:9px 0}
+#view-kuwait .kw-area-detail{border-top:1px solid #ebe4f0;margin-top:10px;padding-top:12px;font-size:12px;color:#66536d;min-height:56px;max-height:190px;overflow:auto}
+#view-kuwait .kw-site-pill{display:inline-flex;font-size:11px;background:#f7f0fb;border:1px solid #e0caef;color:#57267c;border-radius:8px;padding:5px 8px;margin:5px 5px 0 0}
+#view-kuwait .kw-map-shell{background:#edf6fa;border-radius:13px;overflow:hidden;border:1px solid #d9e9f2;width:100%}
+#view-kuwait #kwMapSvg{width:100%;height:auto;max-height:450px;display:block}
+#view-kuwait .kw-map-legend{margin:12px 0 5px}
+#view-kuwait .kw-map-subnote{font-size:10px;line-height:1.5;color:#7b6786}
+#view-kuwait .kw-moc-selected{font-size:12px;background:#f8f4fb;border:1px solid #e3d7ec;border-radius:10px;padding:10px 12px;color:#513b65;margin-top:12px;min-height:48px;line-height:1.55}
+#view-kuwait .kw-moc-tools{display:grid;grid-template-columns:170px 1fr;gap:8px;margin-bottom:12px}
+#view-kuwait .kw-moc-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+#view-kuwait .kw-moc-item{font-size:12px;background:white;color:#31263c;border:1px solid #e6ddec;border-left:4px solid #d9be78;border-radius:10px;padding:10px 12px;text-align:left;display:block;min-width:0;width:100%;cursor:pointer}
+#view-kuwait .kw-moc-item.is-clear{border-left-color:#14ad83;background:#f6fdfa}
+#view-kuwait .kw-moc-item.is-alert{border-left-color:#e45168;background:#fff6f7}
+#view-kuwait .kw-moc-item.is-unverified{border-left-color:#e7b95a}
+#view-kuwait .kw-moc-item:hover,#view-kuwait .kw-moc-item[aria-pressed=true]{outline:2px solid #cfb6e0;outline-offset:0}
+#view-kuwait .kw-moc-name{display:flex;justify-content:space-between;align-items:center;gap:6px;font-weight:800;font-size:12px}
+#view-kuwait .kw-moc-city{font-size:11px;color:#81718a;overflow-wrap:anywhere;margin-top:3px}
+#view-kuwait .kw-moc-code{font:10px/1.4 Consolas,monospace;color:#574d62;margin-top:6px}
+#view-kuwait .kw-moc-state{font-size:10px;font-weight:800;margin-top:7px;color:#a47e18}
+#view-kuwait .is-alert .kw-moc-state{color:#bd2a49}
+#view-kuwait .is-clear .kw-moc-state{color:#158365}
+#view-kuwait .kw-empty{background:#faf7fc;border:1px dashed #d5c3de;border-radius:11px;padding:19px;color:#887792;font-size:12px;text-align:center}
+#view-kuwait .kw-moc-map-pin{cursor:pointer;outline:none}
+#view-kuwait .kw-moc-map-pin:focus-visible circle.kw-pin-main{stroke:#2b134e;stroke-width:4}
+@media(max-width:1290px){#view-kuwait .kw-stat-grid{grid-template-columns:repeat(3,minmax(0,1fr))}#view-kuwait .kw-moc-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:980px){#view-kuwait .kw-dashboard-layout{grid-template-columns:1fr}#view-kuwait .kw-moc-list{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:680px){#view-kuwait .kw-stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#view-kuwait .kw-view-head{display:block}#view-kuwait .kw-view-chips{margin-top:8px}#view-kuwait .kw-sources{display:grid;grid-template-columns:1fr 1fr}#view-kuwait .kw-sources .field{grid-column:span 2}#view-kuwait .kw-sources button{font-size:11px;padding:9px 7px}#view-kuwait .kw-area-controls{grid-template-columns:1fr}#view-kuwait .kw-moc-list{grid-template-columns:repeat(2,minmax(0,1fr))}#view-kuwait .kw-moc-tools{grid-template-columns:1fr}}
+@media(max-width:420px){#view-kuwait .kw-moc-list{grid-template-columns:1fr}#view-kuwait .kw-sources{grid-template-columns:1fr}#view-kuwait .kw-sources .field{grid-column:auto}#view-kuwait .kw-stat-grid{gap:6px}#view-kuwait .kw-stat{padding:11px}#view-kuwait .kw-stat strong{font-size:24px}}
+</style>
+<style id="kw-slim-health-2026">
+#view-kuwait .kw-source-card{margin-bottom:10px}
+#view-kuwait .kw-source-card .card-header{padding:9px 14px}
+#view-kuwait .kw-sources{padding:10px 14px;gap:9px}
+#view-kuwait .kw-sources .field{flex:1 1 180px}
+#view-kuwait .kw-stat-grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin-bottom:12px}
+#view-kuwait .kw-stat{padding:10px 12px}
+#view-kuwait .kw-stat strong{font-size:25px}
+#view-kuwait .kw-stat-vip{background:#f5f7ff}
+#view-kuwait .kw-dashboard-layout{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+#view-kuwait .kw-dashboard-layout>.card{margin:0}
+#view-kuwait .kw-dashboard-layout .card-body{padding:12px}
+#view-kuwait .kw-area-bars{max-height:480px}
+#view-kuwait .kw-area-row{padding:8px 10px;margin-bottom:6px}
+#view-kuwait .kw-area-name{margin-bottom:5px}
+#view-kuwait .kw-area-detail{max-height:145px;overflow:auto}
+#view-kuwait .kw-footnote{font-size:11px;line-height:1.45;color:#77687e;margin:10px 0 0}
+#view-kuwait .kw-watch-section{border:1px solid #e7ddeb;border-radius:12px;padding:10px 12px;margin:0 0 10px;background:#fcfaff}
+#view-kuwait .kw-watch-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:9px}
+#view-kuwait .kw-watch-heading h3{margin:0;font-size:14px;color:#331945}
+#view-kuwait .kw-watch-heading span{font-size:11px;color:#746881}
+#view-kuwait .kw-watch-list{display:grid;gap:7px}
+#view-kuwait .kw-healthy{background:#e9f9f1;border:1px solid #a8dfbf;border-left:5px solid #129964;border-radius:9px;color:#146d45;font-size:13px;font-weight:800;padding:15px 13px}
+#view-kuwait .kw-pending{background:#fff9e9;border:1px solid #efdca7;border-left:5px solid #e6ad37;border-radius:9px;color:#876021;font-size:12px;padding:12px}
+#view-kuwait .kw-watch-alert{background:#fff5f7;border:1px solid #f0c8d0;border-left:5px solid #e45366;border-radius:9px;padding:9px 12px;min-width:0}
+#view-kuwait .kw-watch-alert b{color:#922b46;font-size:13px}
+#view-kuwait .kw-watch-alert small{display:block;font-size:11px;color:#624355;margin-top:4px;line-height:1.4;overflow-wrap:anywhere}
+#view-kuwait .kw-map-details{border:1px solid #e1d6e8;border-radius:11px;padding:8px 11px;background:#fff}
+#view-kuwait .kw-map-details summary{cursor:pointer;font-size:12px;font-weight:700;color:#593274;padding:4px}
+#view-kuwait .kw-map-details .kw-map-shell{margin-top:10px}
+#view-kuwait #kwMapSvg{max-height:315px}
+#view-kuwait .kw-moc-selected{margin-top:8px}
+@media(max-width:1300px){#view-kuwait .kw-stat-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:930px){#view-kuwait .kw-dashboard-layout{grid-template-columns:1fr}}
+@media(max-width:500px){#view-kuwait .kw-stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#view-kuwait .kw-stat strong{font-size:23px}#view-kuwait .kw-sources{display:flex;flex-direction:column;align-items:stretch}#view-kuwait .kw-sources .field{flex:auto;width:100%}}
+</style>
+
+<style id="ran-status-and-kw-revision">
+/* Common compact sticky network totals for every workspace tab. */
+.shell .topbar{min-height:40px;padding-top:4px;padding-bottom:4px}
+.ran-network-strip{position:sticky;top:42px;z-index:93;display:grid;grid-template-columns:1fr 1.25fr 1.25fr 2.2fr 1.12fr auto;gap:6px;align-items:stretch;padding:6px clamp(10px,1.5vw,24px);background:#fbfaff;box-shadow:0 2px 8px #36245212;border-bottom:1px solid #ddd2e8;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain}
+.ran-ns-item{border:1px solid #dfd2eb;border-radius:8px;padding:5px 10px;min-width:0;background:#fff;display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+.ran-ns-item span{font-size:10.5px;font-weight:750;color:#614d73;line-height:1.2}
+.ran-ns-item strong{font-size:16px;color:#612592;line-height:1.2;white-space:nowrap}
+.ran-ns-item small{font-size:10px;color:#665472;line-height:1.25;white-space:normal;overflow-wrap:anywhere}
+.ran-ns-wide small{flex-basis:100%;max-height:32px;overflow:hidden}
+.ran-ns-moc strong{font-size:12px;white-space:normal}
+.ran-ns-moc strong.good{color:#147c50}.ran-ns-moc strong.bad{color:#b22143}
+.ran-ns-snapshot{font-size:9px;color:#80758c;align-self:center;max-width:115px}
+#view-kuwait .kw-view-head{padding:0;margin:0 0 6px;align-items:center}
+#view-kuwait .kw-view-head h1{margin:0 0 2px;font-size:clamp(19px,2vw,25px)}
+#view-kuwait .kw-view-head p{margin:0;font-size:11px}
+#view-kuwait .kw-view-chips{display:none!important}
+#view-kuwait .kw-source-card{margin:0 0 6px}
+#view-kuwait .kw-source-card .card-header{padding:6px 12px}
+#view-kuwait .kw-source-card .card-header h2{font-size:13px}
+#view-kuwait .kw-source-card .card-header span{font-size:10px}
+#view-kuwait .kw-sources{padding:7px 11px;gap:6px;align-items:end}
+#view-kuwait .kw-sources .field{flex:1 1 150px}
+#view-kuwait .kw-sources input[type=file]{padding:4px;font-size:10px}
+#view-kuwait .kw-notice{font-size:10px;padding:6px 10px;margin:0 0 7px}
+#view-kuwait .kw-stat-grid{margin:0 0 8px;gap:6px}
+#view-kuwait .kw-stat{padding:7px 10px}
+#view-kuwait .kw-stat strong{font-size:22px}
+#view-kuwait .kw-stat small{font-size:10px}
+#view-kuwait .kw-map-details{margin-top:7px;padding:6px 8px}
+#view-kuwait #kwMapSvg{height:auto;max-height:285px}
+#view-kuwait .kw-watch-alert.kw-spm-note{border-left:4px solid #d79d27;background:#fff9e7}
+#view-kuwait .kw-watch-alert.kw-archived-note{border-left:4px solid #a48b45;background:#fff9e8}
+#view-kuwait .kw-owner-tag{background:#efeaf7;border:1px solid #ddd1ef;padding:2px 5px;border-radius:5px;margin-left:4px;color:#4f356a;font-size:10px}
+#view-kuwait .kw-site-pill{white-space:normal}
+@media(max-width:1320px){.ran-network-strip{grid-template-columns:repeat(5,minmax(155px,1fr));}.ran-ns-snapshot{display:none}}
+@media(max-width:800px){.ran-network-strip{top:48px;grid-template-columns:repeat(5,minmax(150px,1fr));padding:5px 8px;gap:5px}.ran-ns-item{padding:5px 7px}.ran-ns-item strong{font-size:14px}#view-kuwait .kw-sources .field{flex-basis:100%}}
+</style>
+<style id="outage-dashboard-styles">
+/* OUTAGE DASHBOARD 11 — self-contained analytics view */
+#view-outage{--od-ink:#20142d;--od-purple:#7030a0;--od-muted:#746782;--od-brd:#e6dbec;--od-surface:#fff;--od-bg:#fbf8fd;color:var(--od-ink);max-width:100%;min-width:0}
+#view-outage *{box-sizing:border-box}
+#view-outage .od-top{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-bottom:15px}
+#view-outage .od-top h1{font-size:clamp(24px,2.3vw,32px);margin:0;color:#211333;line-height:1.15}
+#view-outage .od-sub{font-size:12px;color:#766983;margin:6px 0 0}
+#view-outage .od-badge{display:inline-flex;align-items:center;gap:7px;border:1px solid #ddd0e7;background:#f7f0fd;border-radius:999px;padding:8px 12px;color:#623287;font-size:11px;font-weight:700;max-width:min(570px,100%);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#view-outage .od-badge:before{content:'';height:7px;width:7px;border-radius:99px;background:#9b84ac;flex:none}
+#view-outage .od-badge.verified:before{background:#17a574}
+#view-outage .od-badge.demo:before{background:#edaa51}
+#view-outage .od-source{background:var(--od-surface);border:1px solid var(--od-brd);border-radius:14px;padding:12px 15px;margin-bottom:12px;box-shadow:0 4px 12px rgba(50,24,66,.025)}
+#view-outage .od-source-row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end}
+#view-outage .od-source-row .od-file{flex:1 1 210px;min-width:0}
+#view-outage .od-source-row label{font-size:11px;display:block;font-weight:800;color:#5b476a;margin-bottom:6px}
+#view-outage .od-source-row input[type=file]{min-width:0;width:100%;padding:8px;border-radius:9px;border:1px solid #e6dcec;background:#faf8fb;font-size:11px}
+#view-outage .od-actions{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+#view-outage .od-btn{border:1px solid #d9cae3;border-radius:9px;padding:10px 14px;font-size:12px;font-weight:800;background:#fff;color:#62318a;cursor:pointer;min-height:38px}
+#view-outage .od-btn.primary{background:#7030a0;color:#fff;border-color:#7030a0}
+#view-outage .od-btn.export{background:#047856;color:#fff;border-color:#047856}
+#view-outage .od-btn:disabled{opacity:.46;cursor:not-allowed}
+#view-outage .od-hint{font-size:11px;color:#84768e;margin:9px 0 0}
+#view-outage .od-message{font-size:12px;color:#6d547c;margin:8px 0 0;min-height:16px}
+#view-outage .od-message.error{color:#be2349}
+#view-outage .od-message.good{color:#047856}
+#view-outage .od-kpis{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px;margin:12px 0}
+#view-outage .od-kpi{position:relative;text-align:left;border-radius:14px;padding:15px 14px 12px;background:#fff;border:1px solid var(--od-brd);box-shadow:0 4px 15px rgba(63,35,91,.035);cursor:pointer;min-width:0;min-height:107px;transition:transform .15s,box-shadow .15s,border-color .15s}
+#view-outage .od-kpi:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(63,35,91,.095)}
+#view-outage .od-kpi.selected{border-color:#8b4cb5;box-shadow:0 0 0 2px #a47ac728}
+#view-outage .od-kpi small{font-size:11px;color:#6d6374;font-weight:750;display:block;line-height:1.45}
+#view-outage .od-kpi strong{font-size:clamp(25px,2.9vw,35px);display:block;font-weight:850;letter-spacing:-1px;margin:4px 0 2px;color:#332045;font-variant-numeric:tabular-nums}
+#view-outage .od-kpi:before{content:'';position:absolute;left:14px;top:10px;width:26px;height:3px;background:var(--k,#7030a0);border-radius:3px}
+#view-outage .od-kpi small{margin-top:8px}
+#view-outage .od-kpi span{color:#a391ac;font-size:10px;display:block}
+#view-outage .od-chart-grid{display:grid;grid-template-columns:minmax(260px,1fr) minmax(300px,1.4fr);gap:12px;margin-bottom:12px}
+#view-outage .od-panel{background:#fff;border:1px solid var(--od-brd);border-radius:15px;padding:17px;min-width:0;box-shadow:0 5px 16px rgba(44,20,53,.028)}
+#view-outage .od-panel-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px}
+#view-outage .od-panel-head h2{font-size:14px;color:#2b1d38;margin:0;font-weight:850}
+#view-outage .od-panel-head small{font-size:10px;color:#8a7c92}
+#view-outage .od-donut-layout{display:flex;align-items:center;justify-content:center;gap:22px;min-height:226px;flex-wrap:wrap}
+#view-outage .od-donut{width:186px;height:186px;min-width:186px;border-radius:50%;background:conic-gradient(#d15a77 0 30%,#8c57b8 30% 50%,#e2a152 50% 100%);position:relative;box-shadow:0 2px 16px rgba(91,51,113,.09)}
+#view-outage .od-donut-inner{position:absolute;inset:35px;border-radius:50%;background:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;box-shadow:0 0 0 1px #f6f0f8;pointer-events:none}
+#view-outage .od-donut-inner strong{font-size:31px;font-weight:850;color:#2c1f37;line-height:1.15}
+#view-outage .od-donut-inner small{font-size:10px;color:#877892;letter-spacing:.1em;text-transform:uppercase}
+#view-outage .od-legend{min-width:135px;display:grid;gap:10px}
+#view-outage .od-legend button{border:0;padding:5px 0;background:transparent;display:flex;align-items:center;gap:8px;color:#463553;font-size:12px;font-weight:750;text-align:left;cursor:pointer}
+#view-outage .od-dot{height:11px;width:11px;min-width:11px;border-radius:4px;background:var(--legend)}
+#view-outage .od-legend b{margin-left:auto;color:#372047;font-size:14px;padding-left:7px}
+#view-outage .od-area-scroll{max-height:260px;overflow-y:auto;padding-right:6px}
+#view-outage .od-area-row{display:grid;grid-template-columns:minmax(115px,1.2fr) minmax(120px,3fr) 36px;align-items:center;gap:9px;margin:10px 0;cursor:pointer}
+#view-outage .od-area-name{font-size:11px;color:#453353;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:750}
+#view-outage .od-area-track{height:13px;border-radius:5px;background:#f2ecf6;overflow:hidden;display:flex}
+#view-outage .od-area-track i{display:block;height:100%;transition:width .32s}
+#view-outage .od-area-count{text-align:right;font-size:12px;font-weight:850;color:#482b5d}
+#view-outage .od-second-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:12px;margin-bottom:13px}
+#view-outage .od-trigger-row{display:grid;grid-template-columns:minmax(100px,1.5fr) minmax(70px,2fr) 34px;gap:9px;align-items:center;margin:10px 0;font-size:11px;color:#544261}
+#view-outage .od-trigger-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#view-outage .od-trigger-track{height:9px;border-radius:9px;background:#f2edf5;overflow:hidden}
+#view-outage .od-trigger-track i{display:block;height:100%;border-radius:9px;background:linear-gradient(90deg,#7f40ae,#bc8ddb)}
+#view-outage .od-trigger-row b{text-align:right;color:#392647}
+#view-outage .od-aging{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}
+#view-outage .od-age-pill{padding:12px 6px;text-align:center;background:#f9f5fc;border:1px solid #eee2f4;border-radius:10px;cursor:pointer}
+#view-outage .od-age-pill strong{display:block;color:#4d2672;font-size:22px;font-variant-numeric:tabular-nums}
+#view-outage .od-age-pill span{font-size:10px;color:#7c6b87}
+#view-outage .od-table-panel{background:white;border:1px solid var(--od-brd);border-radius:15px;overflow:hidden;min-width:0}
+#view-outage .od-toolbar{padding:14px 16px;display:flex;justify-content:space-between;align-items:center;gap:11px;flex-wrap:wrap}
+#view-outage .od-toolbar h2{font-size:15px;margin:0;color:#291a37}
+#view-outage .od-filter-pills{display:flex;gap:5px;flex-wrap:wrap}
+#view-outage .od-filter-pills button{border:1px solid #e6d9ed;background:#fbf8fd;color:#6d547f;padding:7px 10px;font-size:11px;font-weight:750;border-radius:8px;cursor:pointer}
+#view-outage .od-filter-pills button.active{color:#fff;background:#7030a0;border-color:#7030a0}
+#view-outage .od-search{border:1px solid #e3d7ea;border-radius:8px;padding:9px 11px;font:inherit;font-size:12px;max-width:300px;min-width:160px;width:100%;background:#fff;color:#2e2035}
+#view-outage .od-tablewrap{max-height:435px;overflow:auto;overscroll-behavior:contain}
+#view-outage table{border-collapse:separate;border-spacing:0;min-width:920px;width:100%;table-layout:fixed}
+#view-outage thead th{background:#7030a0;color:#fff;padding:13px 12px;font-size:11px;position:sticky;top:0;text-align:left;z-index:3;white-space:nowrap;cursor:pointer}
+#view-outage tbody td{font-size:11px;padding:11px 12px;border-bottom:1px solid #eee5f2;color:#392b45;vertical-align:top;line-height:1.4;word-break:break-word}
+#view-outage tbody tr:nth-child(even){background:#fcfaff}
+#view-outage tbody tr:hover{background:#f5e9fb}
+#view-outage tbody tr{cursor:pointer}
+#view-outage .od-site{font-weight:850;color:#632e90}
+#view-outage .od-cat-chip{display:inline-block;padding:4px 8px;font-size:10px;font-weight:850;border-radius:6px;background:#f1e7f9;color:#6d4191}
+#view-outage .od-cat-chip.Down{background:#fde8ee;color:#b62350}
+#view-outage .od-cat-chip.Power{background:#fdf0df;color:#a45e08}
+#view-outage .od-cat-chip.Temperature{background:#eee8f9;color:#7442a0}
+#view-outage .od-foot{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:10px 15px;color:#887a91;font-size:11px;background:#fcfaff}
+#view-outage .od-details{background:#f8f2fc;padding:14px 18px;border-top:1px solid #e7d5ee;font-size:12px;color:#362442;display:none}
+#view-outage .od-details.open{display:block}
+#view-outage .od-details strong{display:block;font-size:13px;margin-bottom:5px}
+#view-outage .od-empty{padding:40px 18px;color:#83738d;text-align:center;font-size:13px}
+@media(max-width:1380px){#view-outage .od-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:1050px){#view-outage .od-chart-grid,#view-outage .od-second-grid{grid-template-columns:1fr}}
+@media(max-width:650px){#view-outage .od-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}#view-outage .od-source-row .od-actions{width:100%}#view-outage .od-donut-layout{gap:10px}#view-outage .od-area-row{grid-template-columns:minmax(95px,1fr) minmax(110px,2fr) 28px}#view-outage .od-top h1{font-size:23px}#view-outage .od-toolbar{align-items:stretch}#view-outage .od-search{max-width:none}}
+@media(max-width:370px){#view-outage .od-kpis{grid-template-columns:1fr 1fr}#view-outage .od-kpi{padding:12px 9px}#view-outage .od-kpi strong{font-size:25px}#view-outage .od-aging{grid-template-columns:repeat(2,1fr)}}
+
+
+/* Outage dashboard — compact, click-through incident details */
+#view-outage .od-top{margin-bottom:9px}
+#view-outage .od-source{padding:10px 12px;margin-bottom:10px}
+#view-outage .od-source-row input[type=file]{padding:6px}
+#view-outage .od-message:empty{display:none}
+#view-outage .od-modal{display:none;position:fixed;inset:0;z-index:100500;background:rgba(18,13,32,.62);padding:18px;align-items:center;justify-content:center;overscroll-behavior:contain}
+#view-outage .od-modal.open{display:flex}
+#view-outage .od-modal-box{width:min(760px,100%);max-height:min(84vh,850px);background:#fff;border-radius:19px;box-shadow:0 18px 90px rgba(14,9,24,.35);display:flex;flex-direction:column;overflow:hidden;color:#382749}
+#view-outage .od-modal-top{display:flex;align-items:flex-start;justify-content:space-between;padding:22px 23px 12px;gap:16px;border-bottom:1px solid #efe8f3}
+#view-outage .od-modal-top h2{font-size:22px;line-height:1.2;margin:0 0 7px;color:#3c2056}
+#view-outage .od-modal-top p{font-size:12px;line-height:1.55;color:#776585;margin:0}
+#view-outage #odModalClose{border:1px solid #e6d9ef;color:#6c4d83;background:#f9f5fc;border-radius:9px;width:32px;height:32px;font-size:24px;line-height:1;flex:none;cursor:pointer}
+#view-outage .od-modal-stats{padding:11px 23px;background:#faf6fd;border-bottom:1px solid #eee4f5;display:flex;align-items:baseline;gap:10px}
+#view-outage .od-modal-stats strong{font-size:29px;font-weight:900;color:#7030a0}
+#view-outage .od-modal-stats span{font-size:12px;color:#665573;font-weight:650}
+#view-outage .od-modal-sites{padding:15px 23px;overflow-y:auto;display:grid;gap:9px;min-height:75px}
+#view-outage .od-modal-site{border:1px solid #ebe2ef;border-left:4px solid #7030a0;border-radius:9px;padding:10px 12px;display:grid;grid-template-columns:minmax(90px,.32fr) minmax(0,1fr);gap:8px;background:white;line-height:1.35}
+#view-outage .od-modal-site b{color:#55287d;font-size:13px}
+#view-outage .od-modal-site p{margin:0;color:#5f5367;font-size:12px;word-break:break-word}
+#view-outage .od-modal-site small{font-size:11px;color:#88788f}
+#view-outage .od-modal-bottom{padding:14px 23px;border-top:1px solid #eee4f5;display:flex;gap:9px;justify-content:flex-end;background:#fcfaff}
+#view-outage .od-area-row:hover .od-area-name,#view-outage .od-trigger-row:hover .od-trigger-name{text-decoration:underline;color:#7030a0}
+#view-outage .od-trigger-row{cursor:pointer}
+#view-outage .od-donut{cursor:pointer}
+#view-outage .od-age-pill:hover,#view-outage .od-legend button:hover{box-shadow:0 0 0 2px #dbc8ea}
+@media(max-width:560px){#view-outage .od-modal{padding:8px}#view-outage .od-modal-top{padding:15px}#view-outage .od-modal-sites{padding:10px}#view-outage .od-modal-site{grid-template-columns:1fr;gap:2px}#view-outage .od-modal-bottom{padding:11px}#view-outage .od-modal-top h2{font-size:18px}}
+
+</style>
+<style id="moc-vip-refreshed-style">
+/* Tab 10: VIP + MOC only */
+#view-kuwait .kw-view-head{margin-bottom:10px}
+#view-kuwait .kw-view-head h1{font-size:clamp(22px,2.3vw,29px);letter-spacing:-.03em}
+#view-kuwait .kw-view-head p{font-size:12px;color:#7c6c89}
+#view-kuwait .mv-top-controls{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:9px}
+#view-kuwait .mv-exports{border:1px solid #e2d7ee;border-radius:10px;background:#fff;min-width:190px;flex:1 1 290px;max-width:950px}
+#view-kuwait .mv-exports>summary{font-size:12px;font-weight:800;padding:10px 14px;cursor:pointer;color:#53346c;display:flex;justify-content:space-between;align-items:center;gap:9px;list-style-position:inside}
+#view-kuwait .mv-exports>summary span{font-weight:500;color:#8c7b97;font-size:11px}
+#view-kuwait .mv-source-grid{padding:8px 12px 12px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;border-top:1px solid #eee6f2}
+#view-kuwait .mv-source-grid label{font-size:11px;font-weight:800;color:#584267;min-width:0}
+#view-kuwait .mv-source-grid input{display:block;width:100%;margin-top:6px;background:#fff;border:1px solid #e4d8ed;border-radius:8px}
+#view-kuwait .kw-notice{margin-bottom:12px;font-size:11px}
+#view-kuwait .mv-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:12px}
+#view-kuwait .mv-kpi{padding:13px 17px;border:1px solid #e8ddf0;border-radius:13px;background:#fff;min-width:0;box-shadow:0 4px 14px #31134709;border-top:3px solid #7a45b1}
+#view-kuwait .mv-kpi-moc{border-top-color:#12a67e}
+#view-kuwait .mv-kpi-activity{border-top-color:#dcab3f}
+#view-kuwait .mv-kpi span{font-size:12px;font-weight:800;color:#665278;display:block}
+#view-kuwait .mv-kpi strong{font-size:32px;font-weight:900;color:#311945;display:block;line-height:1.35}
+#view-kuwait .mv-kpi small{font-size:10.5px;color:#8b7a95;display:block;overflow-wrap:anywhere}
+#view-kuwait .mv-panels{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-bottom:13px;align-items:start}
+#view-kuwait .mv-panel{background:#fff;border:1px solid #e9dfea;border-radius:14px;overflow:hidden;min-width:0;box-shadow:0 4px 15px #2710420a}
+#view-kuwait .mv-panel>header{display:flex;align-items:center;justify-content:space-between;padding:12px 15px;border-bottom:1px solid #efe8f3;gap:8px}
+#view-kuwait .mv-panel>header>div{display:flex;align-items:center;gap:9px}
+#view-kuwait .mv-panel h2{font-size:16px;margin:0;color:#352047}
+#view-kuwait .mv-panel>header>span{font-size:11px;color:#846b92;white-space:nowrap}
+#view-kuwait .mv-section-icon{font-size:10px;color:#7030a0;background:#f1e8f8;padding:5px 7px;border-radius:6px;font-weight:900;letter-spacing:.035em}
+#view-kuwait .mv-moc-panel .mv-section-icon{color:#13775f;background:#e8f8f2}
+#view-kuwait .mv-panel .kw-watch-list{padding:12px;display:grid;gap:9px;align-content:start;max-height:500px;overflow:auto}
+#view-kuwait .kw-watch-alert{padding:12px 14px;border-radius:10px;background:#fff7f8}
+#view-kuwait .kw-watch-alert b{font-size:13px;letter-spacing:.01em}
+#view-kuwait .kw-watch-alert small{font-size:11.5px;margin-top:6px;line-height:1.5}
+#view-kuwait .kw-watch-alert.kw-spm-note{background:#fffaf0}
+#view-kuwait .kw-healthy{padding:21px 16px;font-size:14px}
+#view-kuwait .mv-site-badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+#view-kuwait .mv-site-badges span{font-size:10.5px;font-weight:800;border-radius:99px;padding:4px 8px;background:#ffe7ee;color:#a73552}
+#view-kuwait .mv-site-badges .mv-activity-tag{background:#fff1cc;color:#865400}
+#view-kuwait .mv-site-badges .mv-spm-tag{background:#fff1cc;color:#8b6416}
+#view-kuwait .mv-network-details{background:#fff;border-radius:14px;border:1px solid #e8deec;overflow:hidden;margin-top:0}
+#view-kuwait .mv-network-details>summary{display:flex;align-items:center;gap:10px;font-weight:850;color:#432458;list-style:none;cursor:pointer;padding:13px 16px;font-size:13px}
+#view-kuwait .mv-network-details>summary::-webkit-details-marker{display:none}
+#view-kuwait .mv-network-details>summary small{display:block;font-size:10.5px;color:#8a7994;font-weight:500;margin-top:3px}
+#view-kuwait .mv-map-summary-icon{font-size:20px;color:#7030a0}
+#view-kuwait .mv-map-hint{margin-left:auto;font-size:11px;color:#74469c}
+#view-kuwait .mv-network-details[open] .mv-map-hint{display:none}
+#view-kuwait .mv-map-toolbar{padding:8px 15px;display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid #eee6f1;flex-wrap:wrap}
+#view-kuwait .mv-map-legend{display:flex;flex-wrap:wrap;gap:13px;font-size:10.5px;color:#766b84}
+#view-kuwait .mv-map-legend span{display:inline-flex;align-items:center;gap:5px}
+#view-kuwait .mv-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#8798ab}
+#view-kuwait .mv-red{background:#e45473}#view-kuwait .mv-amber{background:#dba634}#view-kuwait .mv-green{background:#16ac7c}#view-kuwait .mv-gray{background:#91a0b2}
+#view-kuwait .mv-map-shell{margin:0 13px 8px;width:calc(100% - 26px);background:#f1f7fa;overflow:auto;border-radius:12px}
+#view-kuwait #kwMapSvg{display:block;width:100%;height:auto;max-height:none;min-width:740px}
+#view-kuwait #kwMocSelected{margin:0 13px 10px}
+#view-kuwait .mv-map-disclaimer{font-size:10px;color:#82778d;padding:0 15px 12px;margin:0}
+#view-kuwait .kw-moc-map-pin:focus-visible{outline:3px solid #855cba;outline-offset:2px}
+@media(max-width:820px){#view-kuwait .mv-panels{grid-template-columns:1fr}#view-kuwait .mv-source-grid{grid-template-columns:1fr}#view-kuwait .mv-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}#view-kuwait .mv-kpi{padding:9px 10px}#view-kuwait .mv-kpi strong{font-size:25px}}
+@media(max-width:490px){#view-kuwait .mv-kpis{grid-template-columns:1fr 1fr}#view-kuwait .mv-kpi-activity{grid-column:span 2}#view-kuwait .mv-top-controls .btn{font-size:11px}}
+</style>
+<style id="ran-moc-escalation-revision">
+/* 2026-10-11: unified file chooser, brand, and escalation annotations. */
+#view-outage .od-source-row input[type=file]{background:#fff;border:1px solid #ded2e9;border-radius:9px;padding:7px 9px;min-height:46px;color:#41304d;font-size:12px}
+#view-outage .od-source-row input[type=file]::file-selector-button{background:#7030a0;color:#fff;border:1px solid #7030a0;border-radius:7px;padding:8px 12px;margin-right:13px;font-size:12px;font-weight:750;cursor:pointer}
+#view-outage .od-source-row input[type=file]::-webkit-file-upload-button{background:#7030a0;color:#fff;border:1px solid #7030a0;border-radius:7px;padding:8px 12px;margin-right:13px;font-size:12px;font-weight:750;cursor:pointer}
+.brand-copy>b{font-size:15px;line-height:1.3;letter-spacing:.2px;white-space:nowrap}
+.ran-ns-moc strong.bad{font-size:12px;line-height:1.35;white-space:normal;color:#b22143}
+#view-kuwait .mv-moc-escalations{display:grid;gap:5px;margin-top:8px}
+#view-kuwait .mv-moc-rule{border:1px solid #efdce2;background:#fff;padding:7px 9px;border-radius:7px;display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:11px;line-height:1.4;color:#4c3040}
+#view-kuwait .mv-moc-rule span{flex:1;overflow-wrap:anywhere}
+#view-kuwait .mv-moc-rule strong{flex:0 0 auto;color:#9c2440;background:#ffe7eb;border-radius:6px;padding:3px 7px;white-space:nowrap;font-size:10.5px}
+#view-kuwait .mv-moc-rule strong.mv-level-review{background:#fff0d4;color:#865509}
+@media(max-width:520px){#view-kuwait .mv-moc-rule{flex-direction:column;align-items:flex-start}.ran-ns-item.ran-ns-moc{min-width:205px}}
+</style>
 </head>
 <body>
 <div class="shell nav-collapsed" id="ranShell">
 <aside class="sidebar" id="ranSidebar" aria-label="Navigation">
- <div class="brand"><div class="brand-icon" role="img" aria-label="stc"><span class="stc-wordmark">stc</span></div><div class="brand-copy"><b>Network Tools</b><small>RAN OPERATIONS</small></div></div>
+ <div class="brand"><div class="brand-icon" role="img" aria-label="stc"><span class="stc-wordmark">stc</span></div><div class="brand-copy"><b>RAN OPERATIONS</b></div></div>
  <div class="sidebar-toggle-line"><button class="sidebar-toggle" id="sidebarToggle" type="button" aria-expanded="true" aria-controls="ranSidebar" aria-label="Collapse navigation" title="Collapse navigation"><svg aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m14 6-6 6 6 6"/></svg></button></div>
  <div><div class="nav-label">WORKSPACE</div><nav class="nav">
  <button title="WhatsApp Summary" aria-label="WhatsApp Summary" data-tab="whatsapp" class="active"><span class="nav-num">01</span> <span class="nav-text">WhatsApp Summary</span></button>
@@ -589,11 +928,21 @@ body.wa-single-scroll #waSyncInfo{white-space:nowrap;overflow:hidden;text-overfl
  <button title="TT Audit" aria-label="TT Audit" data-tab="audit"><span class="nav-num">07</span> <span class="nav-text">TT Audit</span></button>
  <button aria-label="SMS Audit" data-tab="smsaudit" title="SMS Audit"><span class="nav-num">08</span> <span class="nav-text">SMS Audit</span></button>
 <button aria-label="NOC at 8PM" data-tab="noc" title="NOC at 8PM"><span class="nav-num">09</span> <span class="nav-text">NOC at 8PM</span></button>
+ <button aria-label="MOC &amp; VIP" data-tab="kuwait" title="MOC &amp; VIP"><span class="nav-num">10</span> <span class="nav-text">MOC &amp; VIP</span></button>
+ <button title="Outage Dashboard" aria-label="Outage Dashboard" data-tab="outage"><span class="nav-num">11</span> <span class="nav-text">Outage Dashboard</span></button>
  </nav></div>
  <div class="side-note"><b>Data Status</b><span id="sidebarDb">Waiting for Master Data</span><br><span id="sidebarUpdate"></span></div>
 </aside>
 <button id="sidebarBackdrop" class="sidebar-backdrop" type="button" tabindex="-1" aria-label="Close navigation" hidden></button>
 <div class="main"><header class="topbar"><strong>RAN OPERATIONS <small id="runtimeReady" class="ran-ready-status" role="status">Not Ready (Need Master Data)</small></strong><div class="ran-header-actions"><button id="topRules" class="btn btn-ghost" type="button" aria-haspopup="dialog" aria-expanded="false">SPM &amp; Dismantling <span aria-hidden="true">▾</span></button><button id="topImport" class="btn btn-primary header-import" type="button" aria-haspopup="dialog" aria-expanded="false">Import Master Data</button><span id="dbPill" class="tag">No Master Data loaded</span></div></header>
+<div class="ran-network-strip" id="ranNetworkStrip" role="region" aria-label="Network operational status">
+  <div class="ran-ns-item"><span>Number of Total Sites Down</span><strong id="ranNSDown">—</strong><small id="ranNSDownSplit">Hub + Terminal</small></div>
+  <div class="ran-ns-item"><span>Blocked Hub Sites (Power, not Down)</span><strong id="ranNSBlocked">—</strong></div>
+  <div class="ran-ns-item"><span>Power Sites Not Down</span><strong id="ranNSPower">—</strong></div>
+  <div class="ran-ns-item ran-ns-wide"><span>VIP Sites Impacted</span><strong id="ranNSVIP">—</strong><small id="ranNSVIPNames">Waiting for alarm exports</small></div>
+  <div class="ran-ns-item ran-ns-moc"><span>MOC Status</span><strong id="ranNSMOC">Not verified</strong></div>
+  <span class="ran-ns-snapshot" id="ranNSSnapshot" title="Based on uploaded exports, not real-time network status">Waiting for data</span>
+</div>
 <main class="content">
 <section class="view active" id="view-whatsapp">
  <div class="legacy-toolbar"><div class="field"><label for="waQuickSite">Generate site SMS</label><input id="waQuickSite" list="siteCodes" placeholder="e.g. GAA846" autocomplete="off" spellcheck="false"></div><button class="btn btn-primary" id="waQuickSms" type="button">Create SMS</button><span class="note"></span></div>
@@ -807,6 +1156,50 @@ body.wa-single-scroll #waSyncInfo{white-space:nowrap;overflow:hidden;text-overfl
  </div>
  </div>
 </section>
+
+<section class="view" id="view-kuwait">
+ <div class="view-head kw-view-head"><div><h1>MOC &amp; VIP</h1><p>Critical sites status · Active Down, Power, Temperature &amp; Cell alarms</p></div></div>
+ <div class="mv-top-controls">
+  <details class="mv-exports"><summary>Alarm Sources <span>Shared with other tabs</span></summary>
+   <div class="mv-source-grid">
+    <label>Site Down<input type="file" id="kwDown" accept=".csv,.xlsx,.xlsm"></label>
+    <label>Power / Temperature<input type="file" id="kwPower" accept=".csv,.xlsx,.xlsm"></label>
+    <label>Cell Down<input type="file" id="kwCell" accept=".csv,.xlsx,.xlsm"></label>
+   </div>
+  </details>
+  <button type="button" id="kwRefresh" class="btn btn-primary">Refresh Status</button>
+  <button type="button" id="kwCopy" class="btn btn-ghost" disabled>Copy Status</button>
+ </div>
+ <div id="kwNotice" role="status" aria-live="polite" class="kw-notice kw-neutral">Load Master, Down, Power and Cell exports to verify MOC and VIP.</div>
+ <div class="mv-kpis" id="kwStats">
+  <div class="mv-kpi mv-kpi-vip"><span>VIP impacted</span><strong id="kwVipCount">—</strong><small id="kwVipSubtitle">Not verified</small></div>
+  <div class="mv-kpi mv-kpi-moc"><span>MOC impacted</span><strong id="kwMocCount">—</strong><small id="kwMocSubtitle">Not verified</small></div>
+  <div class="mv-kpi mv-kpi-activity"><span>Possible activities</span><strong id="kwActivityCount">—</strong><small>MDT / TCN within first 24h of alarm</small></div>
+ </div>
+ <div class="mv-panels">
+  <article class="mv-panel mv-vip-panel"><header><div><span class="mv-section-icon">VIP</span><h2>VIP Sites</h2></div><span id="kwVipHeader">Checking…</span></header>
+   <div id="kwVipList" class="kw-watch-list"><div class="kw-pending">Waiting for complete alarm exports.</div></div>
+  </article>
+  <article class="mv-panel mv-moc-panel"><header><div><span class="mv-section-icon">MOC</span><h2>MOC Sites</h2></div><span id="kwMocHeader">Checking…</span></header>
+   <div id="kwMocList" class="kw-watch-list"><div class="kw-pending">Waiting for complete alarm exports.</div></div>
+  </article>
+ </div>
+ <details id="kwMapDetails" class="mv-network-details">
+  <summary><span class="mv-map-summary-icon">◈</span><span>MOC Network Map <small>All locations · TEC &amp; SKB Data Centers</small></span><span class="mv-map-hint">Show map</span></summary>
+  <div class="mv-map-toolbar"><div class="mv-map-legend"><span><i class="mv-dot mv-red"></i>Active MOC alarm (all types)</span><span><i class="mv-dot mv-amber"></i>Recent MDT / TCN</span><span><i class="mv-dot mv-green"></i>Clear in exports</span><span><i class="mv-dot mv-gray"></i>Not verified</span></div><button type="button" id="kwMapPNG" class="btn btn-ghost" disabled>Save Map PNG</button></div>
+  <div class="kw-map-shell mv-map-shell"><svg id="kwMapSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" role="img" aria-label="MOC topology diagram. All MOC names and Site IDs visible; TEC and SKB are highlighted data centers. Diagram is schematic, not GPS.">
+   <defs><linearGradient id="mvBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6f8ff"/><stop offset="1" stop-color="#eef7f5"/></linearGradient><linearGradient id="mvDc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2c194b"/><stop offset="1" stop-color="#6334a1"/></linearGradient></defs>
+   <rect width="1200" height="840" fill="url(#mvBg)"/>
+   <g opacity=".55" stroke="#dce5f1" stroke-width="1"><path d="M0 0H1200M0 84H1200M0 168H1200M0 252H1200M0 336H1200M0 420H1200M0 504H1200M0 588H1200M0 672H1200M0 756H1200"/></g>
+   <text x="32" y="38" font-size="21" font-weight="850" fill="#2d2047">Kuwait MOC Network</text><text x="32" y="59" font-size="12" fill="#776b89">Schematic topology · not geographic positions</text>
+   <text x="600" y="82" font-size="13" font-weight="800" text-anchor="middle" fill="#6a5386">CORE DATA CENTERS</text>
+   <g id="kwNetworkLinks" stroke="#a2b8d8" stroke-width="2" fill="none" opacity=".55"/>
+   <g id="kwMapMarkers"/>
+  </svg></div>
+  <div id="kwMocSelected" class="kw-moc-selected">Click any MOC on the map to see the status and alarms.</div>
+  <p class="mv-map-disclaimer">Map labels and Site IDs come from Master Data. Locations are schematic, not GPS coordinates.</p>
+ </details>
+</section>
 <section class="view utility-popover" id="view-import" role="dialog" aria-label="Import Master Data" aria-modal="false">
  <div class="view-head"><div><h1>Import Master Data</h1><p>Load your latest Master Data file.</p></div></div>
  <div class="stat-row"><div class="stat"><strong id="statSites">—</strong><small>Active sites (On-Air)</small></div><div class="stat"><strong id="statHubs">—</strong><small>Hubs</small></div><div class="stat"><strong id="statDeps">—</strong><small>Dependent links</small></div><div class="stat"><strong id="statGolden">—</strong><small>Golden entries (incl. MOC aliases)</small></div><div class="stat vip-stat"><strong id="statVIP">—</strong><small>VIP sites (Escalation sheet)</small></div></div>
@@ -818,6 +1211,46 @@ body.wa-single-scroll #waSyncInfo{white-space:nowrap;overflow:hidden;text-overfl
   <div id="masterDiff" aria-live="polite">No workbook selected.</div>
   <p class="note">Expected sheets: Dependent Sites, Area Name, On air sheet [date], Golden Site, Hub &amp; Terminal, VIP Site Escalation, MOC Sites. All data is validated before replacing the active database.</p>
  </div></div></div>
+</section>
+<section class="view" id="view-outage" aria-label="Outage Dashboard">
+ <div class="od-top"><div><h1>Outage Dashboard</h1></div></div>
+ <div class="od-source">
+  <div class="od-source-row">
+   <div class="od-file"><label for="odDown">Site Down Export</label><input id="odDown" type="file" accept=".csv,.xlsx,.xlsm"></div>
+   <div class="od-file"><label for="odPower">Power &amp; Temperature Export</label><input id="odPower" type="file" accept=".csv,.xlsx,.xlsm"></div>
+   <div class="od-actions"><button type="button" class="od-btn primary" id="odRun">Refresh Dashboard</button><button type="button" class="od-btn export" id="odExport" disabled>Export Excel</button></div>
+  </div>
+  <p class="od-message" id="odMessage" role="status"></p>
+ </div>
+ <div class="od-kpis" id="odKpis">
+  <button class="od-kpi" data-kpi="all" style="--k:#7030a0"><small>Unique affected sites</small><strong id="odTotal">—</strong><span></span></button>
+  <button class="od-kpi" data-kpi="Down" style="--k:#d15a77"><small>Sites Down</small><strong id="odDownCount">—</strong><span id="odDownRoles">Hub + Terminal</span></button>
+  <button class="od-kpi" data-kpi="Power" style="--k:#e2a152"><small>Power-only sites</small><strong id="odPowerCount">—</strong><span>Not Down</span></button>
+  <button class="od-kpi" data-kpi="Temperature" style="--k:#8c57b8"><small>Temperature-only</small><strong id="odTempCount">—</strong><span>Not Down</span></button>
+  <button class="od-kpi" data-kpi="blocked" style="--k:#de6f55"><small>Hub sites for blocking</small><strong id="odBlocked">—</strong><span></span></button>
+  <button class="od-kpi" data-kpi="old" style="--k:#12a786"><small>Down over 24h</small><strong id="odOld">—</strong><span></span></button>
+ </div>
+ <div class="od-chart-grid">
+  <article class="od-panel"><div class="od-panel-head"><h2>Issue distribution</h2></div><div class="od-donut-layout"><div id="odDonut" class="od-donut" role="img" aria-label="Issue distribution chart"><div class="od-donut-inner"><strong id="odDonutValue">—</strong><small>incidents</small></div></div><div id="odLegend" class="od-legend"></div></div></article>
+  <article class="od-panel"><div class="od-panel-head"><h2>Most affected areas</h2></div><div id="odAreaChart" class="od-area-scroll"><p class="od-empty">Waiting for data</p></div></article>
+ </div>
+ <div class="od-second-grid">
+  <article class="od-panel"><div class="od-panel-head"><h2>Alarm types</h2></div><div id="odTriggers"><p class="od-empty">Waiting for data</p></div></article>
+  <article class="od-panel"><div class="od-panel-head"><h2>Down duration</h2></div><div class="od-aging" id="odAging"></div></article>
+ </div>
+ <div class="od-table-panel">
+  <div class="od-toolbar"><div><h2>Site incident explorer</h2><span class="od-sub" id="odShown">0 sites</span></div><div class="od-filter-pills" id="odFilters"><button type="button" class="active" data-kind="all">All</button><button type="button" data-kind="Down">Down</button><button type="button" data-kind="Power">Power</button><button type="button" data-kind="Temperature">Temperature</button><button type="button" data-kind="blocked">Blocked</button><button type="button" data-kind="vip">VIP</button><button type="button" data-kind="old">24h+</button></div><input id="odSearch" class="od-search" placeholder="Search site / area / alarm" aria-label="Search incidents"></div>
+  <div class="od-tablewrap"><table><colgroup><col style="width:105px"><col style="width:160px"><col style="width:235px"><col style="width:110px"><col style="width:105px"><col style="width:215px"><col style="width:95px"></colgroup><thead><tr><th data-sort="site">Site ID</th><th data-sort="area">Area Name</th><th data-sort="alarm">Alarm Name</th><th data-sort="power">Power Type</th><th data-sort="role">Site Type</th><th data-sort="status">Status</th><th data-sort="hours">Duration</th></tr></thead><tbody id="odTableBody"><tr><td colspan="7" class="od-empty">Upload alarm exports to start.</td></tr></tbody></table></div>
+  <div id="odDetails" class="od-details" aria-live="polite"></div><div class="od-foot"><span id="odFooterCount">No data loaded</span></div>
+ </div>
+ <div class="od-modal" id="odModal" aria-hidden="true" role="presentation">
+  <div class="od-modal-box" role="dialog" aria-modal="true" aria-labelledby="odModalTitle" tabindex="-1">
+   <div class="od-modal-top"><div><h2 id="odModalTitle">Sites</h2><p id="odModalDesc"></p></div><button type="button" id="odModalClose" aria-label="Close site details">&times;</button></div>
+   <div class="od-modal-stats"><strong id="odModalCount">0</strong><span id="odModalUnit">sites</span></div>
+   <div class="od-modal-sites" id="odModalSites"></div>
+   <div class="od-modal-bottom"><button type="button" class="od-btn" id="odModalShow">View in table</button><button type="button" class="od-btn primary" id="odModalDone">Close</button></div>
+  </div>
+ </div>
 </section>
 </main></div></div>
 <div class="ran-corner-credit" aria-label="Credit: Ahmed Mostafa">© Ahmed Mostafa</div>
@@ -1215,7 +1648,7 @@ function setAllMeta(){
 }
 function setDb(incoming,source='local'){
  if(!incoming||!incoming.relations||!incoming.sites||!Object.keys(incoming.relations).length)throw Error('Invalid network database JSON.');
- db=incoming;trustedContext=source;setAllMeta();nocSyncOnAir();
+ db=incoming;trustedContext=source;setAllMeta();nocSyncOnAir();window.dispatchEvent(new Event('ran-master-changed'));
 }
 function saveLocal(v){localStorage.setItem(STORAGE,JSON.stringify(v));}
 function escapeHtml(v){return String(v ?? '').replace(/[&<>"']/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m];});}
@@ -1719,7 +2152,7 @@ function renderRules(){const box=$('ruleList');if(!box)return;box.replaceChildre
   const del=document.createElement('button');del.textContent='Remove';del.type='button';del.addEventListener('click',()=>{delete siteRules[site];storeRules();});pill.append(label,del);box.append(pill);
  }
 }
-function storeRules(){try{localStorage.setItem(RULE_KEY,JSON.stringify(siteRules));}catch(err){alert('Site rules could not be saved in this browser: '+err.message);}renderRules();}
+function storeRules(){try{localStorage.setItem(RULE_KEY,JSON.stringify(siteRules));}catch(err){alert('Site rules could not be saved in this browser: '+err.message);}renderRules();window.dispatchEvent(new Event('ran-site-rules-changed'));}
 function saveRule(){const site=code($('ruleSite').value),type=$('ruleType').value;
  if(!/^[A-Z]{1,8}\d{2,5}[A-Z]?$/.test(site)){alert('Enter a valid Site ID.');return;}
  const key=siteGroupKey(site);if(type==='NORMAL')delete siteRules[key];else siteRules[key]=type;
@@ -3667,10 +4100,10 @@ function setSummary(text,source){const value=String(text||'').trim();if(!value &
 }
 function getSummary(){return lastSummary;}
 window.RANShared={setSummary,getSummary};
-const FILE_GROUPS={master:['masterFile','taMaster'],down:['awDown','taDown','saDown'],power:['awPower','taPower','nrPower'],tt:['awRun','taRun'],cell:['taCell'],bulletin:['saBulletin'],summary:['m24SummaryFile','nrWAFile']};
+const FILE_GROUPS={master:['masterFile','taMaster'],down:['awDown','taDown','saDown','kwDown','odDown'],power:['awPower','taPower','nrPower','kwPower','odPower'],tt:['awRun','taRun'],cell:['taCell','kwCell'],bulletin:['saBulletin'],summary:['m24SummaryFile','nrWAFile']};
 const fileStore={};
 function applyFile(target,file){if(!target||!file||target.files?.[0]===file)return;try{const d=new DataTransfer();d.items.add(file);target.files=d.files;}catch(_){/* browser disallows assignment in some modes; memory remains available */}}
-function syncFile(group,file,origin){if(!file)return;fileStore[group]=file;for(const id of FILE_GROUPS[group]){if(id===origin)continue;applyFile($(id),file);}if(group==='summary'){for(const id of ['m24Text','nrText'])if($(id))$(id).value='';}const status=$('sharedFileStatus');if(status)status.textContent='Shared: '+Object.keys(fileStore).join(', ');}
+function syncFile(group,file,origin){if(!file)return;fileStore[group]=file;window.dispatchEvent(new CustomEvent('ran-files-changed',{detail:{group,file}}));for(const id of FILE_GROUPS[group]){if(id===origin)continue;applyFile($(id),file);}if(group==='summary'){for(const id of ['m24Text','nrText'])if($(id))$(id).value='';}const status=$('sharedFileStatus');if(status)status.textContent='Shared: '+Object.keys(fileStore).join(', ');}
 window.RANFiles={get(group){return fileStore[group]||null;},syncFile};
 function bindFiles(){for(const [group,ids] of Object.entries(FILE_GROUPS))for(const id of ids){const el=$(id);if(!el)continue;el.addEventListener('change',()=>{if(el.files?.[0])syncFile(group,el.files[0],id);});if(el.files?.[0])syncFile(group,el.files[0],id);}}
 const depState=new Set();let depMaster=[];
@@ -3939,5 +4372,684 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
 })();
 </script>
 
+<script id="kuwait-status-engine">
+/* MOC & VIP Watch — alarm verification and schematic network diagram. */
+(function(){'use strict';
+ const $=id=>document.getElementById(id);
+ const ns='http://www.w3.org/2000/svg';
+ const clean=v=>String(v??'').trim();
+ const norm=v=>clean(v).toUpperCase().replace(/\s+/g,'');
+ const escapeHTML=v=>clean(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ function normalizeSite(raw){
+   let id=norm(raw).replace(/^[^A-Z0-9]+|[^A-Z0-9/]+$/g,'');
+   if(/^SN[A-Z]{1,5}\d{2,5}[AB]?$/.test(id))id='S'+id.slice(2);
+   return id;
+ }
+ function siteKey(raw){let id=normalizeSite(raw);
+   if(/^S[A-Z]{1,5}\d{2,5}[AB]?$/.test(id))id=id.replace(/(\d{2,5})[AB]$/,'$1');
+   return id;
+ }
+ function expandSite(raw){const id=normalizeSite(raw);
+   if(/^[A-Z]{2,8}\d+A\/B$/.test(id))return [id.slice(0,-2),id.slice(0,-3)+'B'];
+   return /^[A-Z]{2,8}\d+[AB]?$/.test(id)?[id]:[];
+ }
+ const OUTLINE=[[47.974519,29.975819],[48.183189,29.534477],[48.093943,29.306299],[48.416094,28.552004],[47.708851,28.526063],[47.459822,29.002519],[46.568713,29.099025],[47.302622,30.05907],[47.974519,29.975819]];
+ const TOWNS={AMD:[48.077,29.076],SHU:[48.151,29.041],MGF:[48.133,29.101],QRN:[48.068,29.205],SUL:[47.898,29.337],FNT:[48.115,29.174],JHB:[47.672,29.335],SUR:[47.990,29.315],SLM:[48.074,29.337],FRW:[47.965,29.277],NUZ:[47.982,29.328],SSB:[48.117,29.099],SLB:[47.783,29.297],MSF:[48.076,29.287],UHN:[48.114,28.991],HWL:[48.031,29.337],ARD:[47.913,29.289],JLS:[47.950,29.261],SAB:[48.085,29.257],RKK:[48.091,29.142],FHH:[48.135,29.083],JBL:[48.101,29.173]};
+ const project=([lon,lat])=>[42+(lon-46.45)/(48.55-46.45)*565,23+(30.18-lat)/(30.18-28.40)*438];
+ $('kwCountryPath')?.setAttribute('d','M'+OUTLINE.map(p=>project(p).map(v=>v.toFixed(1)).join(',')).join('L')+'Z');
+ const snap={areas:[],sites:[],mocs:[],vips:[],counts:null,master:null,verified:false,verifiedVIP:false,verifiedMOC:false,files:null,latest:0};
+ const cache={};let running=false,pending=false,selectedArea='',selectedMoc='';
+ const IGNORED_EXPLICIT=new Set(['GAF328','GAF073','GAF326','GAJ598','GAF338','GAJ033','GHA351']);
+ const VIP_IGNORE=new Set(['GAA638']);
+ const SPECIAL_SPM=new Set(['GMK029','GKC165']);
+ const IMPORTANT_OLD_VIP=new Set(['GAF143']);
+ // The supplied MOC escalation matrix (TT and WO are distinct levels).
+ // For any other MOC alarm, flag it without inventing a level.
+ const MOC_LEVEL_RULES=[
+  [/^general\s+failure$/i,'L1','L1'],
+  [/^mains\s+failure$/i,'L1','L1'],
+  [/^ac\s+failure$/i,'L1','L1'],
+  [/^(?:temperature\s+over\s*27(?:\s*c)?|temperature\s+over\s*27c)$/i,'L4','L3'],
+  [/^(?:temperature\s+over\s*(?:30(?:\s*\/\s*32)?|32)(?:\s*c)?|high\s+temperature\s+at\s*30c)$/i,'L3','L3'],
+  [/^(?:temperature\s+over\s*37(?:\s*c)?|high\s+temperature\s+over\s*37c)$/i,'L1','L1'],
+  [/^door\s+alarm$/i,'L3','L3'],
+  [/^relay[_\s-]*alarm[_\s-]*critical[_\s-]*37c$/i,'L1','L1'],
+  [/^relay[_\s-]*alarm[_\s-]*critical[_\s-]*27c$/i,'L1','L1'],
+  [/^relay[_\s-]*alarm$/i,'L1','L1'],
+  [/^rectifier\s+dc\s+voltage\s+low$/i,'L1','L1'],
+  [/^rectifier\s+dc\s+low\s+voltage$/i,'L1','L1'],
+  [/^rectifier\s+ac\s+power\s+failure$/i,'L1','L1'],
+  [/^incoming\s+mains\s+voltage\s+out\s+of\s+range$/i,'L1','L1'],
+  [/^commercial\s+power\s+failure$/i,'L1','L1'],
+  [/^mains\s+input\s+out\s+of\s+range$/i,'L1','L1']
+ ];
+ function mocLevel(alarm){const name=clean(alarm);for(const [pattern,tt,wo] of MOC_LEVEL_RULES)if(pattern.test(name))return {tt,wo,known:true};return {tt:'Review',wo:'Review',known:false};}
+ function mocGuidance(alarms){const entries=[];const seen=new Set();for(const [kind,values] of Object.entries(alarms))for(const alarm of values){if(seen.has(alarm.toLowerCase()))continue;seen.add(alarm.toLowerCase());entries.push({kind,alarm,...mocLevel(alarm)});}return entries;}
+ // Snapshot remarks are NOT proof of present activity: MDT/TCN is only a
+ // possible active intervention during the first 24h of an alarm occurrence.
+ const ACTIVITY_AGE_MS=24*60*60*1000;
+ function activeActivity(site){if(!site?.activityRecords?.length)return [];
+  const now=Date.now(),seen=new Set(),valid=[];
+  for(const record of site.activityRecords){
+   if(!record.firstAt||record.firstAt>now+10*60*1000||now-record.firstAt>=ACTIVITY_AGE_MS)continue;
+   for(const kind of record.names)if(!seen.has(kind)){seen.add(kind);valid.push(kind);}
+  }
+  return valid;
+ }
+ function canonicalSite(raw,db){const id=siteKey(raw),sites=db?.sites||{},mocs=db?.mocMap||{};
+  if(mocs[id])return siteKey(mocs[id]);
+  const candidates=[id];
+  // OWS/Cell equipment aliases: IENKC0198 -> IKC0198, ZMK010 -> GMK010.
+  if(/^IEN[A-Z]{2}\d+/.test(id))candidates.push('I'+id.slice(3));
+  if(/^IEN[A-Z]{2}\d+/.test(id))candidates.push('I'+id.slice(3));
+  if(/^I[EN][A-Z]{2}\d+/.test(id))candidates.push('I'+id.slice(2));
+  if(/^[ZN][A-Z]{2}\d+/.test(id))candidates.push('G'+id.slice(1));
+  return candidates.find(code=>sites[code]||Object.values(mocs).some(x=>siteKey(x)===code))||id;
+ }
+ const NON_BLOCKING_POWER=/^\s*(?:ac failure|mains failure|main power source fail(?:ure)?)\s*$/i;
+ const ACTIONABLE_POWER=/(commercial\s*power\s*failure|incoming\s*mains\s*voltage\s*out\s*of\s*range|mains\s*input\s*out\s*of\s*range|hybrid\s*dg\s*abnormal|rectifier\s*(?:dc\s*voltage\s*low|ac\s*power\s*failure)|(?:power|mains|rectifier|volt|hybrid\s*dg))/i;
+ function ownerName(record){const val=clean(record?.vipOwner||record?.owner||record?.operator||'');if(/border/i.test(val))return 'Border';if(/huawei/i.test(val))return 'Huawei';if(/stc/i.test(val))return 'STC';return val||'Owner not in Master';}
+ function spmSet(){const set=new Set([...SPECIAL_SPM]);try{const rules=JSON.parse(localStorage.getItem('RAN_OPERATIONS_SITE_EXCEPTIONS_V1')||'{}');for(const [id,kind] of Object.entries(rules))if(kind==='SPM')set.add(siteKey(id));}catch(_){}return set;}
+
+ // These seven were explicitly confirmed dismantled by the operator. Do not
+ // alter the general Master or claim they are currently operational.
+ const DISM_HEADER=/dismantl|relocat|renovat|vandalis/i;
+ const SPM_RX=/\bspm\b|single[\s-]*phase[\s-]*missing/i;
+ const TEMP_RX=/temp(?:erature)?|ambient|cabinet\s*air\s*inlet|board\s*temp/i;
+ const POWER_RX=/commercial\s*power|power|mains|rectifier|volt(?:age)?|battery|hybrid\s*dg|dg\s*abnormal|ac\s*failure|dc\s*low/i;
+ const STATUS_CLEARED=/^(?:cleared|clear|closed|resolved)$/i;
+ const timeText=x=>x?new Date(x).toLocaleString('en-GB',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'}):'unknown';
+ const notice=(s,tone='neutral')=>{const el=$('kwNotice');el.className='kw-notice kw-'+tone;el.textContent=s;};
+ const updateNumber=(id,x)=>{const el=$(id);if(el)el.textContent=x===null||x===undefined?'—':Number(x).toLocaleString('en-US');};
+ function isOpen(row){if(STATUS_CLEARED.test(clean(row['clearance status']||row['clear status']||row['status'])))return false;
+   if(clean(row['cleared on']||row['clear time']||row['clearance time']))return false;
+   return true;
+ }
+ function parseCSV(text){let rows=[],row=[],field='',quoted=false;const input=String(text||'').replace(/^\ufeff/,'');
+   for(let i=0;i<input.length;i++){let c=input[i];if(quoted){if(c==='"'&&input[i+1]==='"'){field+='"';i++;}else if(c==='"')quoted=false;else field+=c;}
+    else if(c==='"')quoted=true;else if(c===','){row.push(field);field='';}
+    else if(c==='\n'||c==='\r'){if(c==='\r'&&input[i+1]==='\n')i++;row.push(field);field='';if(row.some(v=>clean(v)))rows.push(row);row=[];}
+    else field+=c;
+   }row.push(field);if(row.some(v=>clean(v)))rows.push(row);
+   if(rows.length<2)throw Error('No data rows in CSV.');const head=rows[0].map(x=>clean(x).toLowerCase());
+   return rows.slice(1).map(r=>Object.fromEntries(head.map((h,i)=>[h,clean(r[i])]))).filter(r=>Object.values(r).some(Boolean));
+ }
+ function keyify(row){return Object.fromEntries(Object.entries(row).map(([k,v])=>[clean(k).toLowerCase(),clean(v)]));}
+ async function readFile(file){if(!file)throw Error('No alarm export selected.');let rows;
+   if(/\.csv$/i.test(file.name))rows=parseCSV(await file.text());
+   else if(/\.xls[xm]$/i.test(file.name)){
+    const tables=await window.NetworkExcel.readTables(file);
+    const match=Object.values(tables).find(rows=>rows.length&&Object.keys(rows[0]).some(h=>/^site\s*id$/i.test(h)));
+    if(!match)throw Error('Missing Site ID worksheet in '+file.name);rows=match.map(keyify);
+   }else throw Error('Use CSV, XLSX or XLSM files.');
+   if(!rows?.length||!Object.keys(rows[0]).includes('site id'))throw Error('Missing Site ID rows in '+file.name);
+   if(!Object.keys(rows[0]).includes('alarm name'))throw Error('Missing Alarm Name column in '+file.name);
+   return rows;
+ }
+ async function load(group,file){if(cache[group]?.file===file)return cache[group].rows;
+  const rows=await readFile(file);cache[group]={file,rows};return rows;
+ }
+ function timeStamp(v){const raw=clean(v);if(!raw)return 0;
+   if(/^\d{4}-\d\d-\d\d/.test(raw)){const n=Date.parse(raw.replace(' ','T'));return Number.isFinite(n)?n:0;}
+   const dm=raw.match(/^(\d{1,2})[\/-](\d{1,2})[\/-](\d{4})(?:\s+(\d{1,2}):(\d{2})(?::(\d{2}))?)?/);
+   if(dm){const [,d,m,y,h='0',min='0',sec='0']=dm;const n=new Date(+y,+m-1,+d,+h,+min,+sec).getTime();return Number.isFinite(n)?n:0;}
+   const n=Date.parse(raw);return Number.isFinite(n)?n:0;
+ }
+ function masterSite(db,id){const records=db?.sites||{},base=siteKey(id);
+   const ids=[id,base,base+'A',base+'B'];if(base.startsWith('S'))ids.push('SN'+base.slice(1));
+   return ids.map(k=>records[k]).find(r=>r?.onAir)||ids.map(k=>records[k]).find(Boolean)||{};
+ }
+ function areaFor(db,id){const site=masterSite(db,id),canonical=db?.mocMap?.[id]||id;
+   return clean(site?.area||db?.sites?.[canonical]?.area)||'Area not in Master';
+ }
+ function excludedKeys(rowsByKind){const ignore=new Set([...IGNORED_EXPLICIT].map(siteKey));
+   let manual={};try{manual=JSON.parse(localStorage.getItem('RAN_OPERATIONS_SITE_EXCEPTIONS_V1')||'{}')||{};}catch(_){}
+   for(const [site,kind] of Object.entries(manual))if(kind==='SPM'||kind==='PERMANENT')ignore.add(siteKey(site));
+   // Operator-maintained old-pending category is a definitive reference for
+   // sites out of service due to dismantling / renovation / relocation.
+   let approved='';try{approved=localStorage.getItem('RAN_APPROVED_OLD_PENDING_UPDATES_V1')||'';}catch(_){}
+   if(!approved){approved='*Temporary Dismantling/Under Relocation/Under Renovation/Under Dismantling: 11*\n*IKC0016*\n*GMK258*\n*GAA611*\n*GAF181*\n*GAA771*\n*IAA0106*\n*GAF361*\n*SAA047A/B*\n*SAA062A*\n*GAF143*';}
+   let inDism=false;
+   for(const line of approved.split(/\r?\n/)){
+    const heading=line.match(/^\s*\*([^*]+):\s*\d+\*\s*$/);
+    if(heading){inDism=DISM_HEADER.test(heading[1]);continue;}
+    if(!inDism)continue;const site=line.match(/^\s*\*([A-Z]{2,8}\d+[AB]?(?:\/B)?)\b/i);
+    if(site)for(const expanded of expandSite(site[1]))ignore.add(siteKey(expanded));
+   }
+   for(const rows of Object.values(rowsByKind))for(const r of rows){
+    const remark=clean(r.remark||r.remarks||r['alarm remark']);
+    if(SPM_RX.test(remark)||/\b(?:under|permanent|temporary)\s+dismantl|site\s+(?:will\s+be|is)\s+dismantl/i.test(remark)){
+     for(const id of expandSite(r['site id']))ignore.add(siteKey(id));
+    }
+   }
+   return ignore;
+ }
+ function analyze(down,power,cell,master){
+   const rowsByKind={down,power,cell:cell||[]},exclusions=excludedKeys(rowsByKind),spms=spmSet();
+   const siteMap=new Map(),allSiteMap=new Map();let latest=0,excludedRows=0;
+   const obtain=(target,raw)=>{let id=canonicalSite(raw,master);
+    if(!target.has(id))target.set(id,{id,area:areaFor(master,id),down:new Set(),power:new Set(),temp:new Set(),cell:new Set(),other:new Set(),allPower:new Set(),activity:new Set(),activityRecords:[]});
+    return target.get(id);
+   };
+   const mocKeys=new Set(Object.values(master?.mocMap||{}).map(siteKey));
+   for(const [kind,rows] of Object.entries(rowsByKind))for(const row of rows){
+    const ids=expandSite(row['site id']);if(!ids.length)continue;
+    const isMoc=ids.some(id=>mocKeys.has(canonicalSite(id,master)));
+    if(!isOpen(row)&&!isMoc)continue;
+    const alarm=clean(row['alarm name'])||'Unspecified alarm';
+    const remark=clean([row['remarks'],row['remark'],row['alarm remark'],row['site remarks'],row['comments'],row['comment'],row['description']].filter(Boolean).join(' '));
+    const activityHits=[...new Set((remark.match(/\b(?:MDT|TCN)\b/gi)||[]).map(s=>s.toUpperCase()))];
+    const firstAt=timeStamp(row['first occurred on']||row['alarm occurrence']||row['occurred on']||row['first occurred']);
+    latest=Math.max(latest,timeStamp(row['last occurred on']||row['first occurred on']));
+    for(const id of ids){const key=canonicalSite(id,master);
+     const all=obtain(allSiteMap,id);const target=exclusions.has(key)?null:obtain(siteMap,id);
+     if(!target)excludedRows++;
+     for(const item of target?[all,target]:[all]){
+      for(const activity of activityHits)item.activity.add(activity);
+      if(activityHits.length)item.activityRecords.push({names:activityHits,alarm,firstAt});
+      if(kind==='down')item.down.add(alarm);
+      else if(kind==='cell')item.cell.add(alarm);
+      else if(TEMP_RX.test(alarm))item.temp.add(alarm);
+      else if(POWER_RX.test(alarm)){item.allPower.add(alarm);if(!NON_BLOCKING_POWER.test(alarm))item.power.add(alarm);}
+      else item.other.add(alarm);
+     }
+    }
+   }
+   const areaMap=new Map();for(const site of siteMap.values()){
+    if(!site.down.size&&!site.power.size&&!site.temp.size)continue;
+    if(!areaMap.has(site.area))areaMap.set(site.area,{name:site.area,sites:[],down:new Set(),power:new Set(),temp:new Set(),cell:new Set(),other:new Set()});
+    const area=areaMap.get(site.area);area.sites.push(site);
+    for(const key of ['down','power','temp','cell','other'])if(site[key].size)area[key].add(site.id);
+   }
+   const sites=[...siteMap.values()],areaAffected=sites.filter(s=>s.down.size||s.power.size||s.temp.size),areas=[...areaMap.values()].sort((a,b)=>b.sites.length-a.sites.length||a.name.localeCompare(b.name));
+   const find=(raw,all=false)=>(all?allSiteMap:siteMap).get(canonicalSite(raw,master));
+   const alarmsFor=(id,all=false)=>{const s=find(id,all);return {down:[...(s?.down||[])],power:[...(s?.allPower||[])],temperature:[...(s?.temp||[])],cell:[...(s?.cell||[])],other:[...(s?.other||[])]};};
+   const isAffected=alarms=>Object.values(alarms).some(arr=>arr.length);
+   const vips=Object.entries(master?.sites||{}).filter(([id,r])=>r?.vip && !VIP_IGNORE.has(siteKey(id)))
+      .map(([id,r])=>{const spm=spms.has(siteKey(id)),excluded=exclusions.has(siteKey(id));
+        const alarms=alarmsFor(id,spm||excluded);
+        let oldPending=false;
+        if(IMPORTANT_OLD_VIP.has(siteKey(id))&&!isAffected(alarms)){
+          // Prior WhatsApp Old Pending explicitly identifies this VIP; do not
+          // silently call the ticket a live alarm if the current dump lacks it.
+          alarms.other.push('Old Pending: Under Relocation (current dump not confirmed)');oldPending=true;
+        }
+        return {site:id,name:clean(r.vipCategory||r.area||''),location:areaFor(master,id),owner:ownerName(r),alarms,spm,oldPending,excluded,activity:activeActivity(find(id,true))};
+      })
+      .filter(v=>isAffected(v.alarms)||v.spm).sort((a,b)=>a.site.localeCompare(b.site));
+   const mocs=Object.entries(master?.mocMap||{})
+      .map(([alias,id])=>({alias,site:id,name:clean(master?.sites?.[alias]?.mocName)||areaFor(master,id),location:areaFor(master,id),owner:ownerName(master?.sites?.[id]),alarms:alarmsFor(id,true),activity:activeActivity(find(id,true)),position:TOWNS[alias]||null}))
+      .filter(m=>isAffected(m.alarms)).sort((a,b)=>a.alias.localeCompare(b.alias));
+   const powerNotDown=sites.filter(x=>x.allPower.size&&!x.down.size);
+   const isHub=id=>/hub/i.test(masterSite(master,id)?.type||'')||Array.isArray(master?.relations?.[id])&&master.relations[id].length>0;
+   const downSites=sites.filter(s=>s.down.size);
+   const blockedHubs=powerNotDown.filter(s=>isHub(s.id)&&[...s.power].some(x=>ACTIONABLE_POWER.test(x)));
+   const downHub=downSites.filter(s=>isHub(s.id)).length;
+   const counts={down:downSites.length,downHub,downTerminal:downSites.length-downHub,
+    blockedHubs:blockedHubs.length,powerNotDown:powerNotDown.length,
+    power:sites.filter(x=>x.power.size).length,temp:sites.filter(x=>x.temp.size).length,
+    cell:sites.filter(x=>x.cell.size).length,areas:areas.filter(x=>x.name!=='Area not in Master').length,
+    unmapped:areas.find(x=>x.name==='Area not in Master')?.sites.length||0,unique:areaAffected.length,mocAlerts:mocs.length,
+    vipAlerts:vips.filter(v=>!v.spm).length,excludedRows,excludedIds:exclusions.size};
+   return {sites,areas,mocs,vips,counts,latest,allSiteMap};
+ }
+ function kpis(){const c=snap.counts||{},activityCount=[...snap.vips,...snap.mocs].filter(x=>x.activity?.length&&Object.values(x.alarms).some(a=>a.length)).length;
+  for(const [id,v] of [['kwVipCount',snap.verifiedVIP||c.vipAlerts?c.vipAlerts:null],['kwMocCount',snap.verifiedMOC||c.mocAlerts?c.mocAlerts:null],['kwActivityCount',snap.verifiedVIP||snap.verifiedMOC||activityCount?activityCount:null]])updateNumber(id,v);
+  $('kwVipSubtitle').textContent=snap.verifiedVIP?'Checked against Down, Power & Cell':'Partial check';
+  $('kwMocSubtitle').textContent=snap.verifiedMOC?'Checked against Down, Power & Cell':'Partial check';
+ }
+ function summaryAlarmText(a){return Object.entries(a).filter(([,names])=>names.length).map(([kind,names])=>kind.toUpperCase()+': '+names.join(' / ')).join(' · ');}
+ function showStatus(containerId,headerId,group,complete,fine){const target=$(containerId),header=$(headerId);target.replaceChildren();
+   const actionable=group.filter(s=>!s.spm),activityCount=actionable.filter(s=>s.activity?.length).length;
+   header.textContent=actionable.length+' affected'+(activityCount?' · '+activityCount+' activity':'')+(group.length-actionable.length?' · '+(group.length-actionable.length)+' notes':'');
+   if(!group.length){const box=document.createElement('div');box.className=complete?'kw-healthy':'kw-pending';box.textContent=complete?fine:'Not verified — load Master, Down, Power and Cell exports.';target.append(box);return;}
+   if(!actionable.length&&complete){const box=document.createElement('div');box.className='kw-healthy';box.textContent=fine;target.append(box);}
+   for(const s of group){const item=document.createElement('div');item.className='kw-watch-alert'+(s.spm?' kw-spm-note':'')+(s.oldPending?' kw-archived-note':'');
+    const head=document.createElement('b');head.textContent=(s.alias?s.alias+' · ':'')+s.site+(s.name?' · '+s.name:'');
+    const loc=document.createElement('small');loc.textContent='Area: '+(s.location||'Not in Master')+' · '+(s.owner||'Owner not in Master');
+    const alarms=document.createElement('small');alarms.textContent=summaryAlarmText(s.alarms)||'No active alarm in supplied exports';
+    const mocRules=s.alias?mocGuidance(s.alarms):[];
+    const escalation=document.createElement('div');escalation.className='mv-moc-escalations';
+    if(s.alias)for(const rule of mocRules){
+     const line=document.createElement('div');line.className='mv-moc-rule';
+     const name=document.createElement('span');name.textContent=rule.alarm;
+     const levels=document.createElement('strong');levels.textContent=rule.known?'TT '+rule.tt+' · WO '+rule.wo:'TT / WO level: Review';
+     if(!rule.known)levels.className='mv-level-review';line.append(name,levels);escalation.append(line);
+    }
+    const badges=document.createElement('div');badges.className='mv-site-badges';
+    if(s.spm){const tag=document.createElement('span');tag.className='mv-spm-tag';tag.textContent='Single Phase Missing';badges.append(tag);}
+    if(s.oldPending){const tag=document.createElement('span');tag.className='mv-spm-tag';tag.textContent='Previous Old Pending';badges.append(tag);}
+    if(s.activity?.length&&Object.values(s.alarms).some(v=>v.length)&&!s.oldPending){const tag=document.createElement('span');tag.className='mv-activity-tag';tag.textContent='Maybe activity running · '+s.activity.join(' / ');badges.append(tag);}
+    item.append(head,loc,alarms,escalation,badges);target.append(item);
+   }
+   if(!complete){const box=document.createElement('div');box.className='kw-pending';box.textContent='Partial check — Cell, Down and Power exports are required for an all-fine result.';target.append(box);}
+ }
+ function showVIPMOC(){showStatus('kwVipList','kwVipHeader',snap.vips,snap.verifiedVIP,'VIP Sites are fine');
+  showStatus('kwMocList','kwMocHeader',snap.mocs,snap.verifiedMOC,'MOC Sites are fine');
+  // With no active MOCs the panel stays concise; the map is still available on demand.
+  renderMap();
+ }
+ function selectMOC(alias){const record=snap.mocs.find(m=>m.alias===alias),el=$('kwMocSelected');
+  el.textContent=record?record.alias+' ('+record.site+') · '+summaryAlarmText(record.alarms):'No affected MOC selected.';
+ }
+ function renderMap(){const root=$('kwMapMarkers'),links=$('kwNetworkLinks');root.replaceChildren();links.replaceChildren();
+   const all=Object.entries(snap.master?.mocMap||{}).filter(([alias])=>/^[A-Z]{3}$/.test(alias));
+   if(!all.length){const msg=document.createElementNS(ns,'text');msg.setAttribute('x','600');msg.setAttribute('y','420');msg.setAttribute('text-anchor','middle');msg.setAttribute('fill','#75698a');msg.textContent='Import Master Data to display MOC names and Site IDs';root.append(msg);return;}
+   const lookup=new Map(snap.mocs.map(m=>[m.alias,m]));
+   const cores=['TEC','SKB'].filter(a=>all.some(pair=>pair[0]===a));
+   const branches=all.filter(([alias])=>!cores.includes(alias)).sort((a,b)=>a[0].localeCompare(b[0]));
+   const positions=new Map();cores.forEach((alias,i)=>positions.set(alias,[i===0?280:920,158]));
+   branches.forEach(([alias],i)=>positions.set(alias,[136+(i%5)*232,350+Math.floor(i/5)*99]));
+   const svg=(tag,attrs={})=>{const el=document.createElementNS(ns,tag);for(const [k,v] of Object.entries(attrs))el.setAttribute(k,String(v));return el;};
+   const label=(g,value,attrs)=>{const t=svg('text',attrs);t.textContent=value;g.append(t);return t;};
+   // Two deliberately dominant data centres; connections sit behind labels.
+   if(cores.length===2)links.append(svg('path',{d:'M280 226 L280 255 L920 255 L920 226',stroke:'#8364b1','stroke-width':'5',opacity:'.55'}));
+   const centerX=600;
+   links.append(svg('path',{d:`M${centerX} 255 L${centerX} 305`,stroke:'#a2b8d8','stroke-width':'3'}));
+   for(const [alias] of branches){const [x,y]=positions.get(alias);links.append(svg('path',{d:`M${centerX} 305 L${x} ${Math.min(305,y-51)} L${x} ${y-40}`,stroke:'#bdd0e4','stroke-width':'1.6',opacity:'.55'}));}
+   for(const [alias,site] of [...all].sort((a,b)=>+(cores.includes(b[0]))-+(cores.includes(a[0])))){
+    const [x,y]=positions.get(alias),affected=lookup.get(alias),active=Boolean(affected),activity=active&&affected.activity?.length>0;
+    const color=active?(activity?'#d69a20':'#d84d69'):(snap.verifiedMOC?'#18a779':'#8999ad');
+    const g=svg('g',{class:'kw-moc-map-pin',transform:`translate(${x} ${y})`,tabindex:'0',role:'button','aria-label':alias+' '+site+(active?' has matching active alarm':' '+(snap.verifiedMOC?'clear in exports':'not verified'))});
+    const isCore=cores.includes(alias);
+    if(isCore){
+      g.append(svg('rect',{x:-199,y:-60,width:398,height:132,rx:17,fill:'url(#mvDc)',stroke:color,'stroke-width':'4'}));
+      g.append(svg('rect',{x:-184,y:-43,width:88,height:88,rx:15,fill:'#ffffff',opacity:'.12'}));
+      // A server rack mark rather than an antenna to distinguish the datacentres.
+      for(let j=0;j<3;j++){g.append(svg('rect',{x:-171,y:-34+j*22,width:62,height:16,rx:4,fill:'#eee8ff',opacity:'.93'}));g.append(svg('circle',{cx:-163,cy:-26+j*22,r:2.5,fill:'#1cbb91'}));}
+      label(g,alias,{x:-81,y:-12,fill:'#ffffff','font-size':'36','font-weight':'900'});
+      label(g,'DATA CENTER',{x:-80,y:10,fill:'#dccef6','font-size':'13','font-weight':'850','letter-spacing':'1.8'});
+      label(g,site,{x:-80,y:38,fill:'#f8f2ff','font-size':'17','font-weight':'750'});
+      g.append(svg('rect',{x:155,y:-47,width:27,height:27,rx:13,fill:color,stroke:'#fff','stroke-width':'3'}));
+    }else{
+      const fullName=clean(snap.master?.sites?.[alias]?.mocName||'');
+      g.append(svg('rect',{x:-104,y:-41,width:208,height:82,rx:12,fill:'#ffffff',stroke:'#d9e3ec','stroke-width':'1.4'}));
+      g.append(svg('rect',{x:-104,y:-41,width:6,height:82,rx:3,fill:color}));
+      g.append(svg('circle',{cx:77,cy:-21,r:8,fill:color}));
+      label(g,alias,{x:-84,y:-16,fill:'#32234b','font-size':'19','font-weight':'900'});
+      label(g,fullName.length>22?fullName.slice(0,21)+'…':fullName,{x:-84,y:4,fill:'#6c607d','font-size':'11','font-weight':'650'});
+      label(g,site,{x:-84,y:24,fill:'#6e6480','font-size':'13','font-weight':'750'});
+    }
+    const title=svg('title');title.textContent=alias+' · '+site+(active?' · '+summaryAlarmText(affected.alarms):snap.verifiedMOC?' · Clear in exports':' · Not verified')+(activity?' · Maybe activity running: '+affected.activity.join(' / '):'');g.append(title);
+    const select=()=>{const target=$('kwMocSelected');target.textContent=alias+' · '+site+' — '+(active?summaryAlarmText(affected.alarms)+(activity?' · Maybe activity running ('+affected.activity.join(', ')+')':''):snap.verifiedMOC?'Clear in uploaded Down, Power & Cell exports':'Not fully verified')+(isCore?' · Core Data Center':'');};
+    g.addEventListener('click',select);g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select();}});root.append(g);
+   }
+ }
+ function renderGlobalSummary(){
+   const c=snap.counts,write=(id,value)=>{const el=$(id);if(el)el.textContent=value;};
+   if(!c||!snap.master?.sites){
+     for(const id of ['ranNSDown','ranNSBlocked','ranNSPower','ranNSVIP'])write(id,'—');
+     write('ranNSDownSplit','Hub + Terminal');write('ranNSVIPNames','Waiting for Master and alarm exports');write('ranNSMOC','Not verified');write('ranNSSnapshot','Waiting for data');return;
+   }
+   if(snap.files?.down){write('ranNSDown',c.down);write('ranNSDownSplit',c.downHub+' Hub + '+c.downTerminal+' Terminal');}
+   else {write('ranNSDown','—');write('ranNSDownSplit','Down export missing');}
+   write('ranNSBlocked',snap.files?.down&&snap.files?.power?c.blockedHubs:'—');
+   write('ranNSPower',snap.files?.down&&snap.files?.power?c.powerNotDown:'—');
+   const impacted=snap.vips.filter(v=>!v.spm),spms=snap.vips.filter(v=>v.spm);
+   write('ranNSVIP',impacted.length);
+   write('ranNSVIPNames',(impacted.map(x=>x.site).join(', ')||'No critical VIP alarms')+(spms.length?' · SPM: '+spms.map(s=>s.site).join(', '):'')+(snap.verifiedVIP?'':' · Partial check'));
+   const status=$('ranNSMOC');if(status){status.classList.remove('good','bad');
+   // Always show confirmed alarms from any supplied dump, even if the
+   // other sources are missing. Only an all-fine claim needs full coverage.
+   if(snap.mocs.length){status.textContent='MOC Status: '+snap.mocs.map(x=>x.alias).join(', ')+' have alarms';status.title=snap.mocs.map(x=>x.alias+' ('+x.site+'): '+summaryAlarmText(x.alarms)).join('\n');status.classList.add('bad');}
+   else if(!snap.verifiedMOC)status.textContent='Not verified';
+   else {status.textContent='MOC Status all fine';status.classList.add('good');}}
+   write('ranNSSnapshot','Export '+(snap.latest?timeText(snap.latest):'snapshot')+' · not live');
+ }
+ function render(){kpis();showVIPMOC();renderGlobalSummary();$('kwCopy').disabled=!snap.counts;$('kwMapPNG').disabled=!snap.master?.mocMap||!Object.keys(snap.master.mocMap).length;}
+ async function refresh(){if(running){pending=true;return;}running=true;pending=false;$('kwRefresh').disabled=true;notice('Checking current exports…');await new Promise(done=>setTimeout(done,15));
+  try{
+   const db=window.NetworkTools?.getData?.();
+   const files={down:$('kwDown').files?.[0]||window.RANFiles?.get('down'),power:$('kwPower').files?.[0]||window.RANFiles?.get('power'),cell:$('kwCell').files?.[0]||window.RANFiles?.get('cell')};
+   snap.master=db;snap.files=files;
+   if(!files.down&&!files.power&&!files.cell){const needed=['Site Down','Power / Temperature','Cell Down'];
+    Object.assign(snap,{areas:[],sites:[],mocs:[],vips:[],counts:null,verified:false,verifiedVIP:false,verifiedMOC:false,latest:0});
+    for(const id of ['kwVipCount','kwMocCount','kwActivityCount'])$(id).textContent='—';
+    showVIPMOC();renderGlobalSummary();$('kwCopy').disabled=true;$('kwMapPNG').disabled=true;
+    notice('Missing '+needed.join(' and ')+' export. Upload the files here or in another tab.','warning');return;
+   }
+   const [down,power,cell]=await Promise.all([files.down?load('down',files.down):Promise.resolve([]),files.power?load('power',files.power):Promise.resolve([]),files.cell?load('cell',files.cell):Promise.resolve([])]);
+   const result=analyze(down,power,cell,db),hasMaster=Boolean(db?.sites),allThree=Boolean(files.down&&files.power&&files.cell);
+   const vipAvailable=hasMaster && Number.isInteger(db?.counts?.vip) && !db?.warnings?.some(x=>/VIP Site Escalation sheet not found/i.test(x));
+   const mocAvailable=hasMaster && Object.keys(db?.mocMap||{}).length>0;
+   Object.assign(snap,result,{master:db,files,verified:allThree&&hasMaster,verifiedVIP:allThree&&vipAvailable,verifiedMOC:allThree&&mocAvailable});
+   render();
+   const issues=[];if(!hasMaster)issues.push('Import Master Data to match Areas, VIP and MOC.');
+   if(!files.down)issues.push('Site Down missing.');
+   if(!files.power)issues.push('Power / Temperature missing.');
+   if(!files.cell)issues.push('Cell Down missing: VIP and MOC cannot be marked fine yet.');
+   if(result.latest&&Date.now()-result.latest>24*3600000)issues.push('Old export snapshot — not live network status.');
+   const activityCount=[...result.vips,...result.mocs].filter(v=>v.activity?.length).length;
+   const text='VIP affected: '+result.counts.vipAlerts+' · MOC affected: '+result.counts.mocAlerts+(activityCount?' · '+activityCount+' with MDT/TCN remarks. ':' · ') +issues.join(' ');
+   notice(text,issues.length?'warning':result.counts.vipAlerts||result.counts.mocAlerts?'error':'success');
+  }catch(error){notice('MOC & VIP status error: '+(error.message||String(error)),'error');window.RANErrorPopup?.show(error,'MOC & VIP');}
+  finally{running=false;$('kwRefresh').disabled=false;if(pending){pending=false;setTimeout(refresh,80);}}
+ }
+ function copySummary(){if(!snap.counts)return;
+  const lines=['MOC & VIP Status','Snapshot: '+timeText(snap.latest),
+   'VIP: '+(snap.verifiedVIP?(snap.vips.filter(v=>!v.spm).length?snap.vips.filter(v=>!v.spm).map(v=>v.site).join(', '):'VIP Sites are fine'):'Not fully verified'),
+   'MOC: '+(snap.mocs.length?snap.mocs.map(m=>m.alias+' ('+m.site+')').join(', '):snap.verifiedMOC?'MOC Sites are fine':'Not fully verified')];
+  for(const m of snap.mocs)for(const rule of mocGuidance(m.alarms))lines.push(m.alias+' / '+m.site+' — '+rule.alarm+' — '+(rule.known?'TT '+rule.tt+', WO '+rule.wo:'TT/WO: confirm escalation policy'));
+  for(const x of [...snap.vips,...snap.mocs])if(x.activity?.length)lines.push((x.alias||x.site)+' — Maybe activity running ('+x.activity.join(' / ')+')');
+  lines.push('From uploaded exports, not live network status.');
+  const text=lines.join('\n'),button=$('kwCopy');const finish=()=>{button.textContent='Copied';setTimeout(()=>button.textContent='Copy Status',1200);};
+  if(navigator.clipboard?.writeText)navigator.clipboard.writeText(text).then(finish).catch(fallback);else fallback();
+  function fallback(){const t=document.createElement('textarea');t.value=text;document.body.append(t);t.select();document.execCommand('copy');t.remove();finish();}
+ }
+ function savePNG(){const source=$('kwMapSvg'),clone=source.cloneNode(true);clone.setAttribute('xmlns',ns);clone.setAttribute('width','1440');clone.setAttribute('height','1008');
+  const content=new XMLSerializer().serializeToString(clone),url=URL.createObjectURL(new Blob([content],{type:'image/svg+xml'}));
+  const img=new Image();img.onload=()=>{try{const c=document.createElement('canvas');c.width=1440;c.height=1008;c.getContext('2d').drawImage(img,0,0,1440,1008);
+   const a=document.createElement('a');a.download='MOC_Network_Status_'+new Date().toISOString().slice(0,10)+'.png';a.href=c.toDataURL('image/png');a.click();}
+   catch(e){window.RANErrorPopup?.show(e,'Kuwait Map Export');}finally{URL.revokeObjectURL(url);}};
+  img.onerror=()=>{URL.revokeObjectURL(url);notice('Unable to render map PNG.','error');};img.src=url;
+ }
+ function queued(){clearTimeout(queued.timer);queued.timer=setTimeout(refresh,180);}
+ function init(){for(const [id,fn] of [['kwRefresh',refresh],['kwCopy',copySummary],['kwMapPNG',savePNG]])$(id)?.addEventListener('click',fn);
+  for(const id of ['kwDown','kwPower','kwCell'])$(id)?.addEventListener('change',queued);
+  document.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',queued));
+  window.addEventListener('ran-master-changed',queued);
+  window.addEventListener('ran-site-rules-changed',queued);
+  window.addEventListener('storage',e=>{if(['RAN_OPERATIONS_SITE_EXCEPTIONS_V1','RAN_APPROVED_OLD_PENDING_UPDATES_V1'].includes(e.key))queued();});
+  window.addEventListener('ran-files-changed',e=>{if(['down','power','cell'].includes(e.detail?.group))queued();});
+  showVIPMOC();renderGlobalSummary();setTimeout(queued,900);
+ }
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+ window.KuwaitStatus=Object.freeze({refresh,getSnapshot:()=>snap});
+})();
+
+</script>
+<script type="application/json" id="odExampleData">[{"kind":"Down","site":"GAF366","area":"Jleeb Al-Shiyoukh","alarm":"CSL Fault","power":"MEW-Relay","role":"Terminal","status":"Site is direct down"},{"kind":"Down","site":"GKC109","area":"Rawda","alarm":"CSL Fault","power":"MEW-Relay","role":"Terminal","status":"Site is direct down"},{"kind":"Down","site":"GAA771","area":"Wafra (farms)","alarm":"CSL Fault","power":"MEW","role":"Terminal","status":"Site is direct down"},{"kind":"Down","site":"IKC0260","area":"Sharq","alarm":"NE Is Disconnected","power":"MEW","role":"Terminal","status":"Site is direct down"},{"kind":"Down","site":"IKC0062","area":"Shuwaikh Port","alarm":"NE Is Disconnected","power":"MEW","role":"Hub(1T)","status":"Hub and terminals are direct down"},{"kind":"Down","site":"IKC0061","area":"Shuwaikh Port","alarm":"NE Is Disconnected","power":"MEW","role":"Terminal","status":"Site is down due to Hub IKC0062"},{"kind":"Down","site":"IKC0129","area":"Mirqab","alarm":"Rectifier AC Power Failure","power":"MEW","role":"Terminal","status":"Site is down due to power alarm"},{"kind":"Down","site":"GAA107","area":"Magwa","alarm":"Commercial Power Failure","power":"MEW-Relay","role":"Hub(1T)","status":"Hub and terminals are down due to power issue"},{"kind":"Down","site":"CAM431","area":"Ardhiya Industrial","alarm":"NE Is Disconnected","power":"DG","role":"Terminal","status":"Site is direct down"},{"kind":"Down","site":"GAA240","area":"Burgan","alarm":"NE Is Disconnected","power":"MEW-Relay","role":"Terminal","status":"Site is down due to Hub GAA107"},{"kind":"Down","site":"CAM131","area":"North West Desert","alarm":"NE Is Disconnected","power":"DG","role":"Terminal","status":"Site is direct down"},{"kind":"Down","site":"GAJ566","area":"Al Mutlaa City","alarm":"NE Is Disconnected","power":"MEW","role":"Terminal","status":"Site is direct down"},{"kind":"Down","site":"GAA019","area":"Shuaiba Industrial esterly","alarm":"Incoming Mains Voltage Out of Range","power":"MEW-Relay","role":"Terminal","status":"Site is down due to power alarm"},{"kind":"Down","site":"GAF143","area":"Airport","alarm":"NE Is Disconnected","power":"MEW-Relay","role":"Terminal","status":"Site is direct down"},{"kind":"Down","site":"IAA0106","area":"Al-Zour Refinery","alarm":"NE Is Disconnected","power":"MEW","role":"Terminal","status":"Site is direct down"},{"kind":"Down","site":"GAF361","area":"Farwaniya","alarm":"NE Is Disconnected","power":"MEW-Relay","role":"Terminal","status":"Site is direct down"},{"kind":"Down","site":"SAA047","area":"Al-Zour Refinery","alarm":"Mains Input Out of Range","power":"MEW","role":"Terminal","status":"Site is down due to power alarm"},{"kind":"Down","site":"SAA062","area":"Mangaf","alarm":"Mains Input Out of Range","power":"MEW","role":"Terminal","status":"Site is down due to power alarm"},{"kind":"Down","site":"SAF022","area":"Khaitan","alarm":"Mains Input Out of Range","power":"MEW","role":"Terminal","status":"Site is down due to power alarm"},{"kind":"Down","site":"SHA051","area":"Mubarak Al-Abdullah","alarm":"NE Is Disconnected","power":"MEW","role":"Terminal","status":"Site is direct down"},{"kind":"Temperature","site":"GAJ092","area":"Al-Sbiya","alarm":"High Temperature Over 37C","power":"DG","role":"Hub(7T)","status":"Temperature Alarm Only + Blocked"},{"kind":"Temperature","site":"GAF411","area":"Airport","alarm":"High Temperature Over 37C","power":"MEW","role":"Terminal","status":"Temperature Alarm Only"},{"kind":"Temperature","site":"GAJ112","area":"Saad Al-Abdulla","alarm":"Cabinet Air Inlet Temperature Unacceptable","power":"MEW-Relay","role":"Terminal","status":"Temperature Alarm Only"},{"kind":"Temperature","site":"GAA845","area":"Al-Khairan","alarm":"High Temperature Over 37C","power":"MEW","role":"Terminal","status":"Temperature Alarm Only"},{"kind":"Temperature","site":"GAA581","area":"Al-Zour Refinery","alarm":"High Temperature Over 37C","power":"DG","role":"Terminal","status":"Temperature Alarm Only"},{"kind":"Temperature","site":"GAA343","area":"Al-Zour Refinery","alarm":"High Temperature Over 37C","power":"DG","role":"Hub(1T)","status":"Temperature Alarm Only + Blocked"},{"kind":"Temperature","site":"GMK215","area":"Jaber Al-Ali","alarm":"High Temperature Over 37C","power":"MEW-Relay","role":"Terminal","status":"Temperature Alarm Only"},{"kind":"Temperature","site":"IKC0128","area":"Qibla","alarm":"High Temperature Over 37C","power":"MEW","role":"Terminal","status":"Temperature Alarm Only"},{"kind":"Temperature","site":"IAA0049","area":"Shuwaikh Educational","alarm":"High Temperature Over 37C","power":"MEW","role":"Terminal","status":"Temperature Alarm Only"},{"kind":"Power","site":"GAJ396","area":"Kaerawan","alarm":"Commercial Power Failure","power":"DG","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GAA754","area":"Mina Abdulla","alarm":"Commercial Power Failure","power":"DG","role":"Hub(5T)","status":"Power Alarm Only + Blocked"},{"kind":"Power","site":"GAJ571","area":"Al Mutlaa City","alarm":"Commercial Power Failure","power":"MEW","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GKC554","area":"Shuwaikh Industrial","alarm":"Rectifier AC Power Failure","power":"MEW","role":"Hub(3T)","status":"Power Alarm Only + Blocked"},{"kind":"Power","site":"GAJ619","area":"Al Mutlaa City","alarm":"Commercial Power Failure","power":"MEW","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GAJ632","area":"Al Mutlaa City","alarm":"Commercial Power Failure","power":"MEW","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GAJ546","area":"Al Mutlaa City","alarm":"Commercial Power Failure","power":"MEW","role":"Hub(1T)","status":"Power Alarm Only + Blocked"},{"kind":"Power","site":"GHA270","area":"Jabriya","alarm":"Rectifier AC Power Failure","power":"MEW-Relay","role":"Hub(1T)","status":"Power Alarm Only + Blocked"},{"kind":"Power","site":"GAJ562","area":"Al Mutlaa City","alarm":"Commercial Power Failure","power":"MEW","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GAJ489","area":"Al Mutlaa City","alarm":"Commercial Power Failure","power":"MEW","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GAJ620","area":"Al Mutlaa City","alarm":"Incoming Mains Voltage Out of Range","power":"MEW","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GAJ647","area":"Al Mutlaa City","alarm":"Incoming Mains Voltage Out of Range","power":"MEW","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GAJ565","area":"Al Mutlaa City","alarm":"Commercial Power Failure","power":"MEW","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GAJ559","area":"Al Mutlaa City","alarm":"Incoming Mains Voltage Out of Range","power":"MEW","role":"Hub(1T)","status":"Power Alarm Only + Blocked"},{"kind":"Power","site":"GAJ497","area":"Al Mutlaa City","alarm":"Incoming Mains Voltage Out of Range","power":"MEW","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GAJ578","area":"Al Mutlaa City","alarm":"Incoming Mains Voltage Out of Range","power":"MEW","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GAJ553","area":"Al Mutlaa City","alarm":"Commercial Power Failure","power":"MEW","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GAJ541","area":"Al Mutlaa City","alarm":"Commercial Power Failure","power":"MEW","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GAJ572","area":"Al Mutlaa City","alarm":"Incoming Mains Voltage Out of Range","power":"MEW","role":"Hub(2T)","status":"Power Alarm Only + Blocked"},{"kind":"Power","site":"GAJ488","area":"Al Mutlaa City","alarm":"Commercial Power Failure","power":"MEW","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GAJ547","area":"Al Mutlaa City","alarm":"Incoming Mains Voltage Out of Range","power":"MEW","role":"Hub(3T)","status":"Power Alarm Only + Blocked"},{"kind":"Power","site":"GAJ507","area":"Al Mutlaa City","alarm":"Incoming Mains Voltage Out of Range","power":"MEW","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GAJ617","area":"Al Mutlaa City","alarm":"Incoming Mains Voltage Out of Range","power":"MEW","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GAJ594","area":"Al Mutlaa City","alarm":"Incoming Mains Voltage Out of Range","power":"MEW","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GAJ622","area":"Al Mutlaa City","alarm":"Incoming Mains Voltage Out of Range","power":"MEW","role":"Hub(1T)","status":"Power Alarm Only + Blocked"},{"kind":"Power","site":"GAJ563","area":"Al Mutlaa City","alarm":"Commercial Power Failure","power":"MEW","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GAJ545","area":"Al Mutlaa City","alarm":"Incoming Mains Voltage Out of Range","power":"MEW","role":"Hub(2T)","status":"Power Alarm Only + Blocked"},{"kind":"Power","site":"GAJ616","area":"Al Mutlaa City","alarm":"Incoming Mains Voltage Out of Range","power":"MEW","role":"Hub(1T)","status":"Power Alarm Only + Blocked"},{"kind":"Power","site":"GAJ532","area":"Al Mutlaa City","alarm":"Commercial Power Failure","power":"MEW","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GAA146","area":"Ali S. Al-Salem (Um Al-Hayman) Outer","alarm":"Incoming Mains Voltage Out of Range","power":"MEW","role":"Hub(5T)","status":"Power Alarm Only + Blocked"},{"kind":"Power","site":"GKC028","area":"South Jahra","alarm":"Commercial Power Failure","power":"MEW","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GHA065","area":"Siddiq","alarm":"Commercial Power Failure","power":"MEW-Relay","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GKC165","area":"Failaka Island","alarm":"Incoming Mains Voltage Out of Range","power":"MEW","role":"Hub(1T)","status":"Power Alarm Only + Blocked"},{"kind":"Power","site":"GAJ187","area":"Sulaibiya","alarm":"Commercial Power Failure","power":"MEW-Relay","role":"Hub(1T)","status":"Power Alarm Only + Blocked"},{"kind":"Power","site":"GHA510","area":"Hawalli","alarm":"Rectifier AC Power Failure","power":"MEW","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GAA219","area":"Julaila Chalets","alarm":"Commercial Power Failure","power":"MEW","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GAF270","area":"Jleeb Al-Shiyoukh","alarm":"Incoming Mains Voltage Out of Range","power":"MEW-Relay","role":"Terminal","status":"Power Alarm Only"},{"kind":"Power","site":"GAA029","area":"Egaila","alarm":"Commercial Power Failure","power":"MEW","role":"Hub(1T)","status":"Power Alarm Only + Blocked"},{"kind":"Power","site":"GAJ113","area":"Sulaibiya","alarm":"Commercial Power Failure","power":"MEW-Relay","role":"Hub(1T)","status":"Power Alarm Only + Blocked"}]</script>
+<script id="outage-dashboard-module">
+/* Outage Dashboard — MACCRRROO.xlsm / Module4 outage RCA layout, corrected active-alarm logic. */
+(function(){'use strict';
+const $=id=>document.getElementById(id),fmt=n=>Number(n||0).toLocaleString('en-US'),escape=s=>String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+const COLORS={Down:'#d15a77',Power:'#e2a152',Temperature:'#8c57b8'};
+const RE_TEMP=/high\s*temp|temperature|cabinet\s*air|board\s*temperature|ambient\s*temperature/i;
+const RE_POWER=/commercial\s*power\s*failure|mains\s*input\s*out\s*of\s*range|incoming\s*mains\s*voltage\s*out\s*of\s*range|hybrid\s*dg\s*abnormal|rectifier\s*(ac|dc)|ac\s*mains\s*power\s*failure/i;
+const RE_IGNORE=/^(?:ac\s*failure|mains\s*failure|main\s*power\s*source\s*fail|dg\s*power\s*fail)$/i;
+const RE_BLOCK=/commercial\s*power\s*failure|mains\s*input\s*out\s*of\s*range|incoming\s*mains\s*voltage\s*out\s*of\s*range|hybrid\s*dg\s*abnormal|rectifier\s*(ac|dc)|high\s*temp|temperature|cabinet\s*air|board\s*temperature|ambient\s*temperature/i;
+const EXCLUDED_OLD=new Set(['IKC0016','GMK258','GAA611','GAF181','GAA771','IAA0106','GAF361','SAA047','SAA062','GAF143']);
+const SPM_BACKSTOP=new Set(['GMK029','GKC165']); // known user-confirmed SPM; all operator rules also apply
+let model=null,kind='all',needle='',areaSelected='',ageSelected='',sortKey='',sortDesc=false,mode='';
+const toKey=x=>String(x??'').trim().toUpperCase().replace(/\s+/g,'').replace(/[^A-Z0-9/]/g,'');
+function keyBase(v){const s=toKey(v).replace(/^SN(?=A[A-Z]\d{3}[A-Z]?$)/,'S');return /^S[A-Z]{2}\d{3}[AB]$/.test(s)?s.slice(0,-1):s;}
+function expandId(x){let id=toKey(x);if(!id)return[];const pair=id.match(/^([A-Z]{3}\d{3})A\/B$/);if(pair)return[pair[1]+'A',pair[1]+'B'];return[id];}
+function getField(r,...names){for(const name of names){const n=name.toLowerCase().replace(/[^a-z0-9]/g,'');for(const [k,v] of Object.entries(r||{}))if(k.toLowerCase().replace(/[^a-z0-9]/g,'')===n&&v!==null&&String(v).trim()!=='')return String(v).trim();}return'';}
+function dateOf(raw){if(raw===null||raw===undefined||String(raw).trim()==='')return null;
+ const n=Number(raw);if(Number.isFinite(n)&&n>20000&&n<100000){const dt=new Date(Math.round((n-25569)*86400000));return Number.isFinite(+dt)?dt:null;}
+ let val=String(raw).trim().replace(/\u00a0/g,' ');if(/^\d{4}-\d\d-\d\d/.test(val)){const dt=new Date(val.replace(' ','T'));return Number.isFinite(+dt)?dt:null;}
+ const match=val.match(/^(\d{1,2})[/-](\d{1,2})[/-](\d{4})\s*(.*)$/);if(match){let a=+match[1],b=+match[2],year=+match[3];let month=a,day=b;if(a>12){day=a;month=b;}else if(b>12){month=a;day=b;}else{day=a;month=b;}const time=(match[4]||'00:00').match(/(\d{1,2}):(\d{2})(?::(\d{2}))?/);const dt=new Date(year,month-1,day,time?+time[1]:0,time?+time[2]:0,time&&time[3]?+time[3]:0);return Number.isFinite(+dt)?dt:null;}
+ const dt=new Date(val);return Number.isFinite(+dt)?dt:null;}
+function isUncleared(r){const status=getField(r,'Clearance Status','Clear Status','Status').toLowerCase(),clear=getField(r,'Cleared On','Clear Time','Clearance Time');return !/^(?:cleared|clear|closed|resolved)$/.test(status)&&!clear;}
+function refSite(id,db){const a=toKey(id),base=keyBase(a),variants=[a,base,base+'A',base+'B'];if(base.startsWith('S'))variants.push('SN'+base.slice(1));
+ const records=db?.sites||{};const exact=variants.map(x=>[x,records[x]]).find(x=>x[1]?.onAir)||variants.map(x=>[x,records[x]]).find(x=>x[1]);return exact?{id:exact[0],...(exact[1]||{})}:{id:a};}
+function exceptions(){let rules={};try{rules=JSON.parse(localStorage.getItem('RAN_OPERATIONS_SITE_EXCEPTIONS_V1')||'{}')||{};}catch(_){}
+ const dis=new Set(EXCLUDED_OLD);try{const txt=localStorage.getItem('RAN_APPROVED_OLD_PENDING_UPDATES_V1')||'';if(txt){let isD=false;for(const line of txt.split(/\r?\n/)){if(/^\s*\*[^*]*:\s*\d+\*/.test(line)){isD=/dismant|renovat|relocat|vandal/i.test(line);continue;}if(isD){const m=line.match(/^\s*\*([A-Z]{2,8}\d{3,5}(?:A\/B|A|B)?)\b/i);if(m)for(const code of expandId(m[1]))dis.add(keyBase(code));}}}}catch(_){}
+ return {rules,dis};}
+function exclusionFor(id,remark='',flags){const base=keyBase(id),rule=flags.rules[base]||flags.rules[toKey(id)];if(rule==='SPM'||SPM_BACKSTOP.has(base)||/\bsingle\s+phase\s+missing\b|\bSPM\b/i.test(remark))return'SPM';
+ if(rule==='PERMANENT'||flags.dis.has(base)||/\b(?:temporary|permanent|under)\s*(?:dismantl|relocat|renovat|vandal)/i.test(remark))return'Dismantled / Relocation';return'';}
+function buildRel(db){const rel=db?.relations||{},termHub=new Map(),hubTerms=new Map();for(const [hub,deps]of Object.entries(rel)){const clean=[...new Set((Array.isArray(deps)?deps:[]).map(toKey).filter(x=>x&&x!==toKey(hub)&&!/^NO\s*DEPENDENT/i.test(x)))];if(clean.length){hubTerms.set(toKey(hub),clean);for(const x of clean)if(!termHub.has(x))termHub.set(x,toKey(hub));}}
+ return {termHub,hubTerms};}
+function roleInfo(id,db,rel,exampleRole){const type=String(exampleRole||refSite(id,db)?.type||'');const children=rel.hubTerms.get(id)||[];
+ const hub=children.length>0||(!db&&/Hub/i.test(type));const terminalHub=rel.termHub.get(id)||'';
+ return {hub,children,terminalHub,label:hub?'Hub'+(children.length?'('+children.length+'T)':(/\(\d+T\)/.exec(type)||[''])[0]):'Terminal'};}
+function groupRecentAlarm(events,before,timeBudget=72){return events.filter(x=>x.time&&(!before||x.time<=before)&&(!before||before-x.time<=timeBudget*3600000)).sort((a,b)=>a.time-b.time)[0]||null;}
+function alarmKind(s){if(RE_TEMP.test(s))return'Temperature';if(RE_POWER.test(s)&&!RE_IGNORE.test(s.trim()))return'Power';return'';}
+function rawRow(site,alarm,ts,remark='',type='Down'){return {site,alarm,time:ts||null,remark,type};}
+function buildFromFiles(downRows,powerRows,master){const flags=exceptions(),rel=buildRel(master),map=new Map(),excluded=new Map(),now=Date.now();let skippedCleared=0,ignoredAlarmRows=0;
+ const fetchRec=id=>{id=toKey(id);if(!map.has(id)){const info=refSite(id,master);map.set(id,{site:id,down:[],alarms:[],remarks:[],area:info.area||'',power:info.power||'',vip:!!info.vip,moc:!!info.moc,masterSite:info});}return map.get(id);};
+ function consume(rows,isDown){for(const row of rows){if(!isUncleared(row)){skippedCleared++;continue;}
+  const ids=expandId(getField(row,'Site ID','SiteID','Site','Site Name','NE Name'));if(!ids.length)continue;
+  const name=getField(row,'Alarm Name','Alarm','Name')||'Unknown Alarm',remark=getField(row,'Remark','Remarks','Alarm Remark'),when=dateOf(getField(row,'First Occurred On','Occurred On','Alarm Time','Time','Last Occurred On'));
+  if(!isDown&&!alarmKind(name)){ignoredAlarmRows++;continue;}
+  for(const id of ids){const ex=exclusionFor(id,remark,flags);if(ex){excluded.set(keyBase(id),ex);continue;}
+   if(/\b(?:MDT|TCN)\b/i.test(remark)&&when&&now>=when.getTime()&&(now-when.getTime())<86400000){excluded.set(keyBase(id),'Active MDT / TCN < 24h');continue;}
+   const siteMeta=refSite(id,master);if(master&&siteMeta.onAir===false&&master.sites?.[siteMeta.id]){excluded.set(keyBase(id),'Off-Air in Master');continue;}
+   const rec=fetchRec(id);if(remark)rec.remarks.push(remark);
+   if(isDown)rec.down.push(rawRow(id,name,when,remark,'Down'));
+   else rec.alarms.push(rawRow(id,name,when,remark,alarmKind(name)));
+  }
+ }}consume(downRows,true);consume(powerRows,false);
+ // Any site marked SPM or dismantled in any row is entirely excluded, not partly included.
+ for(const [site] of map){if(excluded.has(keyBase(site)))map.delete(site);}
+ const recs=[];
+ for(const rec of map.values()){
+  if(!rec.down.length&&!rec.alarms.length)continue;
+  const meta=refSite(rec.site,master),rinfo=roleInfo(rec.site,master,rel),hubId=rinfo.terminalHub,hubRec=hubId?map.get(hubId):null;
+  const ds=rec.down.slice().sort((a,b)=>(a.time??Infinity)-(b.time??Infinity));const down=ds[0]||null;
+  const als=rec.alarms.slice().sort((a,b)=>(a.time??Infinity)-(b.time??Infinity));
+  const root=down?groupRecentAlarm(als,down.time?.getTime()):als[0]||null;
+  const cat=down?'Down':(root?.type||'Power');let alarm=down?(root?.alarm||down.alarm):(root?.alarm||'—');
+  const block=!down&&rinfo.hub&&als.some(a=>RE_BLOCK.test(a.alarm));
+  const childrenDown=rinfo.children.filter(x=>map.get(x)?.down.length>0);
+  let status='';
+  if(down){const ownCause=root?.type?.toLowerCase()||'direct';
+   if(rinfo.hub){status=childrenDown.length?`Hub and ${childrenDown.length} terminal${childrenDown.length>1?'s':''} are down due to ${ownCause==='direct'?'direct down':ownCause+' issue'}`:`Only hub is down${ownCause==='direct'?' (direct down)':' due to '+ownCause+' issue'}`;}
+   else if(hubRec?.down.length){const parentRoot=groupRecentAlarm(hubRec.alarms,hubRec.down[0]?.time?.getTime());status=`Site is down due to Hub ${hubId}`+(parentRoot?' ('+parentRoot.type.toLowerCase()+')':'');}
+   else status=root?`Site is down due to ${root.type.toLowerCase()} alarm`:'Site is direct down';
+  }else status=(cat==='Power'?'Power':'Temperature')+' Alarm Only'+(block?' + Blocked':'');
+  const info=refSite(rec.site,master),area=info.area||'Area not in Master';
+  const first=down?.time||root?.time||null;
+  let hours=down&&first?Math.max(0,(now-first.getTime())/3600000):null;
+  recs.push({site:rec.site,area,power:info.power||'',role:rinfo.label,hub:rinfo.hub,hubID:hubId,childDown:childrenDown,alarm,status,cat,blocked:block,hours,first,rawDown:ds,rawAlarms:als,vip:!!info.vip,moc:!!info.moc,ts:down?.time?.getTime()||0,remarks:rec.remarks});
+ }
+ const by={Down:[],Power:[],Temperature:[]};for(const record of recs)by[record.cat].push(record);
+ for(const rows of Object.values(by))rows.sort((a,b)=>a.area.localeCompare(b.area)||a.site.localeCompare(b.site));
+ return summarize(by,{source:'Active export snapshot',hasMaster:!!master,quality:{excluded:excluded.size,cleared:skippedCleared,noncausal:ignoredAlarmRows,missingArea:recs.filter(x=>x.area==='Area not in Master').length,missingTime:recs.filter(x=>x.cat==='Down'&&!x.first).length},rawTotals:{downRows:downRows.length,alarmRows:powerRows.length}});
+}
+function summarize(by,meta){const all=[...by.Down,...by.Temperature,...by.Power];const area=new Map(),triggers=new Map();for(const rec of all){const n=area.get(rec.area)||{name:rec.area,Down:0,Power:0,Temperature:0,total:0};n[rec.cat]++;n.total++;area.set(rec.area,n);const alarm=rec.alarm||'Unknown';triggers.set(alarm,(triggers.get(alarm)||0)+1);}
+ const aging=[0,0,0,0];for(const r of by.Down){if(r.hours===null)continue;aging[r.hours<1?0:r.hours<4?1:r.hours<24?2:3]++;}
+ return {by,all,areas:[...area.values()].sort((a,b)=>b.total-a.total||a.name.localeCompare(b.name)),triggers:[...triggers].sort((a,b)=>b[1]-a[1]),aging,
+  downHub:by.Down.filter(x=>x.hub).length,blocked:all.filter(x=>x.blocked).length,old:by.Down.filter(x=>x.hours!==null&&x.hours>=24).length,...meta};
+}
+function sampleModel(){const example=JSON.parse($('odExampleData').textContent);const db=window.NetworkTools?.getData?.()||null;
+ const rel=buildRel(db),by={Down:[],Power:[],Temperature:[]},flags=exceptions();let excluded=0;
+ for(const row of example){if(exclusionFor(row.site,'',flags)){excluded++;continue;}
+  const info=refSite(row.site,db),role=roleInfo(row.site,db,rel,row.role);const cat=row.kind;
+  const rec={site:row.site,area:info.area||row.area||'Area not in Master',power:info.power||row.power||'',role:role.label,hub:role.hub,hubID:role.terminalHub,alarm:row.alarm,status:row.status,cat,blocked:/\bBlocked\b/i.test(row.status)&&!/^SPM/i.test(row.status),hours:null,first:null,rawDown:[],rawAlarms:[],vip:!!info.vip,moc:!!info.moc,childDown:[],remarks:[]};
+  by[cat].push(rec);
+ }
+ for(const arr of Object.values(by))arr.sort((a,b)=>a.area.localeCompare(b.area)||a.site.localeCompare(b.site));
+ return summarize(by,{source:'Workbook example (historical · corrected exclusions)',hasMaster:true,quality:{excluded,cleared:0,noncausal:0,missingArea:0,missingTime:0},rawTotals:{downRows:20,alarmRows:48}});
+}
+function message(text,level=''){const el=$('odMessage');el.textContent=text;el.className='od-message '+level;}
+function setStats(){const m=model,k={odTotal:m.all.length,odDownCount:m.by.Down.length,odPowerCount:m.by.Power.length,odTempCount:m.by.Temperature.length,odBlocked:m.hasMaster?m.blocked:null,odOld:m.old};
+ for(const [id,v] of Object.entries(k))$(id).textContent=v===null?'—':fmt(v);
+ $('odDownRoles').textContent=m.hasMaster?m.downHub+' Hub + '+(m.by.Down.length-m.downHub)+' Terminal':'Import Master Data to classify';
+ 
+
+ $('odExport').disabled=false;
+}
+function applyFilter(next){kind=next;areaSelected='';ageSelected='';document.querySelectorAll('#odFilters button').forEach(btn=>btn.classList.toggle('active',btn.dataset.kind===kind));document.querySelectorAll('#view-outage .od-kpi').forEach(btn=>btn.classList.toggle('selected',btn.dataset.kpi===kind));renderTable();}
+function renderCharts(){const m=model,total=m.all.length,segments=[['Down',m.by.Down.length],['Power',m.by.Power.length],['Temperature',m.by.Temperature.length]];
+ $('odDonutValue').textContent=total;const stops=[];let start=0;for(const [cat,count]of segments){const end=start+100*(count/(total||1));stops.push(`${COLORS[cat]} ${start.toFixed(3)}% ${end.toFixed(3)}%`);start=end;}
+ $('odDonut').style.background=total?'conic-gradient('+stops.join(',')+')':'#f0e8f5';$('odDonut').setAttribute('aria-label',segments.map(([c,n])=>`${c}: ${n}`).join(', '));
+ const leg=$('odLegend');leg.replaceChildren();for(const [cat,n]of segments){const b=document.createElement('button');b.type='button';b.innerHTML=`<i class="od-dot" style="--legend:${COLORS[cat]}"></i>${cat}<b>${n}</b>`;b.addEventListener('click',()=>openMetric('category',cat));leg.append(b);}
+ const max=m.areas[0]?.total||1;const a=$('odAreaChart');a.replaceChildren();for(const rec of m.areas.slice(0,12)){const row=document.createElement('div');row.className='od-area-row';row.title='Show sites in '+rec.name;
+  row.innerHTML=`<span class="od-area-name">${escape(rec.name)}</span><span class="od-area-track">${segments.map(([key])=>`<i style="width:${rec[key]/max*100}%;background:${COLORS[key]}"></i>`).join('')}</span><b class="od-area-count">${rec.total}</b>`;
+  row.addEventListener('click',(event)=>{const clicked=event.target.closest('[data-od-cat]');openMetric('area',rec.name,clicked?.dataset.odCat||'');});row.querySelectorAll('.od-area-track i').forEach((bar,i)=>bar.dataset.odCat=segments[i][0]);a.append(row);
+ }if(!m.areas.length)a.innerHTML='<p class="od-empty">No active incidents</p>';
+ const t=$('odTriggers');t.replaceChildren();const maxT=m.triggers[0]?.[1]||1;for(const [label,count]of m.triggers.slice(0,7)){const el=document.createElement('div');el.className='od-trigger-row';el.title=label;el.innerHTML=`<span class="od-trigger-name">${escape(label)}</span><span class="od-trigger-track"><i style="width:${count/maxT*100}%"></i></span><b>${count}</b>`;el.addEventListener('click',()=>openMetric('alarm',label));t.append(el);}if(!m.triggers.length)t.innerHTML='<p class="od-empty">No active incidents</p>';
+ const labels=['< 1h','1–4h','4–24h','24h+'];const aging=$('odAging');aging.replaceChildren();labels.forEach((lab,i)=>{const btn=document.createElement('button');btn.type='button';btn.className='od-age-pill';btn.innerHTML=`<strong>${mode==='sample'?'—':m.aging[i]}</strong><span>${lab}</span>`;btn.addEventListener('click',()=>openMetric('age',i));if(mode==='sample'){btn.disabled=true;btn.title='Sample has no recorded outage timestamps';}aging.append(btn);});
+}
+function filtered(){if(!model)return[];let rows=model.all.filter(r=>kind==='all'||kind===r.cat||(kind==='blocked'&&r.blocked)||(kind==='vip'&&r.vip)||(kind==='old'&&r.cat==='Down'&&r.hours!==null&&r.hours>=24));
+ if(areaSelected)rows=rows.filter(r=>r.area===areaSelected);if(needle)rows=rows.filter(r=>[r.site,r.area,r.alarm,r.power,r.role,r.status,r.hubID].some(x=>String(x).toLowerCase().includes(needle)));
+ if(ageSelected!==''){const ranges=[[0,1],[1,4],[4,24],[24,1e12]],b=ranges[ageSelected];rows=rows.filter(r=>r.cat==='Down'&&r.hours!==null&&r.hours>=b[0]&&r.hours<b[1]);}
+ if(sortKey){rows=rows.slice().sort((a,b)=>{const x=a[sortKey],y=b[sortKey];return (typeof x==='number'&&typeof y==='number'?x-y:String(x??'').localeCompare(String(y??'')))*(sortDesc?-1:1);});}else rows=rows.slice().sort((a,b)=>(['Down','Temperature','Power'].indexOf(a.cat)-['Down','Temperature','Power'].indexOf(b.cat))||a.area.localeCompare(b.area)||a.site.localeCompare(b.site));return rows;
+}
+function renderTable(){if(!model)return;const rows=filtered(),b=$('odTableBody');b.replaceChildren();const f=document.createDocumentFragment();for(const rec of rows.slice(0,1500)){const tr=document.createElement('tr');const hours=rec.hours===null?'—':rec.hours>=24?`${Math.floor(rec.hours/24)}d ${Math.floor(rec.hours%24)}h`:`${rec.hours.toFixed(1)}h`;
+  const cells=[rec.site,rec.area,rec.alarm,rec.power||'—',rec.role,rec.status,hours];cells.forEach((value,i)=>{const td=document.createElement('td');if(i===0)td.className='od-site';if(i===5){const pill=document.createElement('span');pill.className='od-cat-chip '+rec.cat;pill.textContent=rec.cat+(rec.blocked?' · Blocked':'');td.append(pill,document.createElement('br'),document.createTextNode(rec.status));}else td.textContent=value;tr.append(td);});tr.addEventListener('click',()=>showDetails(rec));f.append(tr);}
+ if(!rows.length){const tr=document.createElement('tr');tr.innerHTML='<td colspan="7" class="od-empty">No sites match the selected filters.</td>';f.append(tr);}b.append(f);
+ $('odShown').textContent=fmt(rows.length)+' sites'+(areaSelected?' · '+areaSelected:'');$('odFooterCount').textContent=fmt(rows.length)+' shown / '+fmt(model.all.length)+' unique affected sites';$('odDetails').classList.remove('open');}
+function showDetails(rec){const el=$('odDetails');const time=rec.first?rec.first.toLocaleString('en-GB'):'Not supplied';const alarms=rec.rawAlarms.map(a=>a.alarm).filter((x,i,arr)=>arr.indexOf(x)===i).join(', ')||'None';const downs=rec.rawDown.map(a=>a.alarm).filter((x,i,arr)=>arr.indexOf(x)===i).join(', ')||'None';
+ el.innerHTML=`<strong>${escape(rec.site)} — ${escape(rec.area)} ${rec.vip?'· VIP':''} ${rec.blocked?'· Blocked':''}</strong><div>First alarm: ${escape(time)} · Power: ${escape(rec.power||'Unknown')} · Type: ${escape(rec.role)}</div><div><b>Down:</b> ${escape(downs)} &nbsp; <b>Power / Temperature:</b> ${escape(alarms)}</div>${rec.hubID?`<div><b>Parent Hub:</b> ${escape(rec.hubID)}</div>`:''}${rec.childDown?.length?`<div><b>Down Terminals:</b> ${escape(rec.childDown.join(', '))}</div>`:''}`;
+ el.classList.add('open');el.scrollIntoView({block:'nearest',behavior:'smooth'});
+}
+const KPI_EXPLAIN={
+ all:['Unique affected sites','Each physical Site ID is counted once, even when several alarms exist.'],
+ Down:['Sites Down','Sites with an active Site Down alarm in the uploaded Down export.'],
+ Power:['Power-only sites','Sites with an active power alarm and no active Site Down alarm.'],
+ Temperature:['Temperature-only sites','Sites with an active temperature alarm and no active Site Down alarm.'],
+ blocked:['Hub sites for blocking','Hub sites not Down that have an actionable power or temperature alarm. SPM and dismantled sites are excluded.'],
+ old:['Down over 24 hours','Currently Down sites with First Occurred On at least 24 hours before this snapshot. Missing dates are not assumed to be zero.']
+};
+let modalFilter=null,modalReturnFocus=null;
+function openMetric(which,value,category=''){
+ if(!model)return;
+ let title='',desc='',rows=[],targetKind='all',targetArea='',targetAge='';
+ const all=model.all;
+ if(which==='kpi'||which==='category'){
+  const id=value;[title,desc]=KPI_EXPLAIN[id]||[String(id), 'Affected site list.'];
+  if(which==='category')title=id+' sites';
+  targetKind=id;
+  rows=all.filter(r=>id==='all'||r.cat===id||(id==='blocked'&&r.blocked)||(id==='old'&&r.cat==='Down'&&r.hours!==null&&r.hours>=24));
+ }else if(which==='area'){
+  title=value;desc=category?`Active ${category.toLowerCase()} incidents in this area.`:'All active incidents in this area, counting each Site ID once.';
+  targetArea=value;targetKind=category||'all';rows=all.filter(r=>r.area===value&&(!category||r.cat===category));
+ }else if(which==='alarm'){
+  title=value;desc='Sites whose selected primary alarm is this type.';
+  rows=all.filter(r=>r.alarm===value);targetKind='all';
+ }else if(which==='age'){
+  const labels=['< 1 hour','1–4 hours','4–24 hours','24 hours+'],ranges=[[0,1],[1,4],[4,24],[24,Infinity]];
+  title='Down duration · '+labels[value];desc='Active Down sites grouped by elapsed time since First Occurred On.';
+  targetAge=value;rows=all.filter(r=>r.cat==='Down'&&r.hours!==null&&r.hours>=ranges[value][0]&&r.hours<ranges[value][1]);
+ }
+ modalReturnFocus=document.activeElement;
+ modalFilter={kind:targetKind,area:targetArea,age:targetAge};
+ $('odModalTitle').textContent=title;
+ $('odModalDesc').textContent=desc;
+ $('odModalCount').textContent=fmt(rows.length);
+ $('odModalUnit').textContent=rows.length===1?'site':'sites';
+ const host=$('odModalSites');host.replaceChildren();
+ if(!rows.length){const msg=document.createElement('p');msg.textContent='No matching active sites in this snapshot.';msg.className='od-empty';host.append(msg);}
+ else for(const r of rows){const card=document.createElement('div');card.className='od-modal-site';card.style.borderLeftColor=COLORS[r.cat];
+  const sid=document.createElement('b');sid.textContent=r.site;
+  const description=document.createElement('div');const p=document.createElement('p');p.textContent=`${r.area} · ${r.cat}${r.blocked?' · Blocked':''} · ${r.role}`;
+  const small=document.createElement('small');small.textContent=r.alarm+(r.hours!==null&&r.cat==='Down'?` · ${r.hours>=24?Math.floor(r.hours/24)+'d '+Math.floor(r.hours%24)+'h':r.hours.toFixed(1)+'h'} Down`:'');
+  description.append(p,small);card.append(sid,description);host.append(card);
+ }
+ const dlg=$('odModal');dlg.classList.add('open');dlg.setAttribute('aria-hidden','false');document.body.style.setProperty('--outage-modal-open','1');$('odModalClose').focus();
+}
+function closeMetric(){const dlg=$('odModal');dlg.classList.remove('open');dlg.setAttribute('aria-hidden','true');modalReturnFocus?.focus?.();}
+function modalShowInTable(){if(!modalFilter)return;kind=modalFilter.kind;areaSelected=modalFilter.area;ageSelected=modalFilter.age;needle='';$('odSearch').value='';document.querySelectorAll('#odFilters button').forEach(b=>b.classList.toggle('active',b.dataset.kind===kind));renderTable();closeMetric();$('odTableBody').closest('.od-table-panel').scrollIntoView({behavior:'smooth',block:'start'});}
+
+function render(){if(!model)return;setStats();renderCharts();renderTable();const m=model;message('','good');}
+async function readRows(file,kind){const fn=window.RANOperationsExtensions?.readInput;if(!fn)throw Error('RAN Excel parser not ready. Reload the page.');return fn(file,kind);}
+async function refresh(){const down=$('odDown').files?.[0]||window.RANFiles?.get('down'),power=$('odPower').files?.[0]||window.RANFiles?.get('power');if(!down||!power){message('Select Site Down and Power/Temperature exports.','error');return;}
+ const btn=$('odRun');btn.disabled=true;message('Analyzing alarm exports…');await new Promise(r=>setTimeout(r,30));try{const [d,p]=await Promise.all([readRows(down,'down'),readRows(power,'power')]);model=buildFromFiles(d,p,window.NetworkTools?.getData?.()||null);model.source='Snapshot · '+down.name+' + '+power.name;mode='live';kind='all';needle='';areaSelected='';ageSelected='';render();if(!model.hasMaster)message('Import Master Data to verify Hub, Terminal, Area and Blocked KPI. Incident counts are based on uploaded dumps.','error');}catch(e){message(e.message||String(e),'error');window.RANErrorPopup?.show(e,'Outage Dashboard');}finally{btn.disabled=false;}}
+function showSample(){try{model=sampleModel();mode='sample';kind='all';needle='';areaSelected='';ageSelected='';render();message('Historical MACCRRROO workbook preview — corrected SPM / dismantling exclusions applied; not live network data.','good');}catch(e){window.RANErrorPopup?.show(e,'Outage Dashboard sample');}}
+/* OOXML export: reproduces MACCRRROO/outage four-section A:F report,
+   purple header rows and native Excel pie chart, plus optional analytics worksheet. */
+const XML='http://schemas.openxmlformats.org/spreadsheetml/2006/main';
+const xesc=value=>String(value??'').replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/g,'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]));
+function xc(ref,val,style=3){if(val===null||val===undefined||val==='')return'';
+ if(typeof val==='number'&&Number.isFinite(val))return`<c r="${ref}" s="${style}"><v>${val}</v></c>`;
+ const safe=String(val);return`<c r="${ref}" t="inlineStr" s="${style}"><is><t xml:space="preserve">${xesc(safe)}</t></is></c>`;}
+function col(num){let v='';while(num){num--;v=String.fromCharCode(65+num%26)+v;num=Math.floor(num/26);}return v;}
+function styleXML(){const mkFont=(size,color,bold=false)=>`<font><sz val="${size}"/><name val="Calibri"/>${bold?'<b/>':''}<color rgb="FF${color}"/></font>`;
+ const fonts=[mkFont(10,'362342'),mkFont(14,'FFFFFF',true),mkFont(10,'FFFFFF',true),mkFont(10,'362342'),mkFont(10,'62338A',true),mkFont(12,'FFFFFF',true),mkFont(13,'7030A0',true),mkFont(16,'362342',true),mkFont(10,'637083')];
+ const fills=['<fill><patternFill patternType="none"/></fill>','<fill><patternFill patternType="gray125"/></fill>',...['7030A0','FFFFFF','F7F2FA','F0E8F6','FCE8EE','EBF8F1','231434'].map(hex=>`<fill><patternFill patternType="solid"><fgColor rgb="FF${hex}"/><bgColor indexed="64"/></patternFill></fill>`)];
+ const bNone='<border><left/><right/><top/><bottom/><diagonal/></border>',bThin='<border><left style="thin"><color rgb="FFDED6E3"/></left><right style="thin"><color rgb="FFDED6E3"/></right><top style="thin"><color rgb="FFDED6E3"/></top><bottom style="thin"><color rgb="FFDED6E3"/></bottom><diagonal/></border>';
+ const xf=(fontId,fillId,borderId,align='center',wrap=false)=>`<xf numFmtId="0" fontId="${fontId}" fillId="${fillId}" borderId="${borderId}" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="${align}" vertical="center"${wrap?' wrapText="1"':''}/></xf>`;
+ const xfs=[xf(0,0,0),xf(1,2,1),xf(2,2,1),xf(3,3,1,'center',true),xf(3,4,1,'center',true),xf(4,5,1,'left',true),xf(5,2,1),xf(6,3,0,'left'),xf(7,3,0,'left'),xf(3,3,1,'left',true),xf(3,7,1,'center'),xf(8,4,0,'left'),xf(4,6,1,'center')];
+ return`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><styleSheet xmlns="${XML}"><fonts count="${fonts.length}">${fonts.join('')}</fonts><fills count="${fills.length}">${fills.join('')}</fills><borders count="2">${bNone}${bThin}</borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="${xfs.length}">${xfs.join('')}</cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>`;
+}
+/* Stable XLSX builder: Excel-compatible OOXML, no overlapping merges or damaged drawing relationships. */
+function reportTime(d){if(!d)return '—';const dt=d instanceof Date?d:new Date(d);return Number.isFinite(+dt)?dt.getFullYear()+'-'+String(dt.getMonth()+1).padStart(2,'0')+'-'+String(dt.getDate()).padStart(2,'0')+' '+String(dt.getHours()).padStart(2,'0')+':'+String(dt.getMinutes()).padStart(2,'0'):'—';}
+function xSheetRow(rows,r,c,v,style=3){if(!rows.has(r))rows.set(r,new Map());rows.get(r).set(c,xc(col(c)+r,v,style));}
+function serializeSheet(rows,merges,widths,{zoom=80,heights={},last=40}={}){
+ const body=[...rows.keys()].sort((a,b)=>a-b).map(r=>{const attrs=heights[r]?` ht="${heights[r]}" customHeight="1"`:'';return `<row r="${r}"${attrs}>${[...rows.get(r).entries()].sort((a,b)=>a[0]-b[0]).map(e=>e[1]).join('')}</row>`;}).join('');
+ const cols=widths.map((w,i)=>`<col min="${i+1}" max="${i+1}" width="${w}" customWidth="1"/>`).join('');
+ const mergeXml=merges.length?`<mergeCells count="${merges.length}">${merges.map(ref=>`<mergeCell ref="${ref}"/>`).join('')}</mergeCells>`:'';
+ return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="${XML}"><dimension ref="A1:${col(widths.length)}${last}"/><sheetViews><sheetView showGridLines="0" zoomScale="${zoom}" workbookViewId="0"/></sheetViews><sheetFormatPr defaultRowHeight="24"/><cols>${cols}</cols><sheetData>${body}</sheetData>${mergeXml}<pageMargins left="0.3" right="0.3" top="0.45" bottom="0.45" header="0.2" footer="0.2"/></worksheet>`;
+}
+function makeOutageSheet(m){
+ const rows=new Map(),merges=[],heights={},put=(r,c,value,style=3)=>xSheetRow(rows,r,c,value,style);
+ put(1,1,'OUTAGE REPORT',1);merges.push('A1:H1');heights[1]=39;
+ put(2,1,`Updated ${reportTime(new Date())}  |  ${m.all.length} affected sites`,11);merges.push('A2:H2');heights[2]=25;
+ const cards=[['Affected',m.all.length],['Down',m.by.Down.length],['Power',m.by.Power.length],['Temperature',m.by.Temperature.length]];
+ cards.forEach(([name,n],i)=>{const c=i*2+1;put(4,c,name,2);merges.push(`${col(c)}4:${col(c+1)}4`);put(5,c,n,8);merges.push(`${col(c)}5:${col(c+1)}6`);});heights[4]=28;heights[5]=29;heights[6]=23;
+ let r=8;const headers=['Site ID','Area Name','Alarm Name','Power Source','Site Type','Status / Root Cause','Down Duration','First Occurred On'];
+ for(const [title,entries]of [['DOWN SITES',m.by.Down],['TEMPERATURE ISSUES',m.by.Temperature],['POWER ISSUES',m.by.Power],['ALL ISSUES COMBINED',m.all]]){
+  put(r,1,`${title}   ·   ${entries.length}`,1);merges.push(`A${r}:H${r}`);heights[r]=31;r++;
+  headers.forEach((h,i)=>put(r,i+1,h,2));heights[r]=31;r++;
+  if(!entries.length){put(r,1,'No active sites',11);merges.push(`A${r}:H${r}`);heights[r]=27;r++;}
+  for(let i=0;i<entries.length;i++){
+   const e=entries[i],style=i%2?4:3;
+   const vals=[e.site,e.area,e.alarm,e.power||'—',e.role,e.status,e.hours===null?'—':(e.hours>=24?Math.floor(e.hours/24)+'d '+Math.floor(e.hours%24)+'h':e.hours.toFixed(1)+'h'),reportTime(e.first)];
+   vals.forEach((v,j)=>put(r,j+1,v,j===0?12:(j===5?9:style)));
+   const long=Math.max(String(e.alarm||'').length/37,String(e.status||'').length/52,1);
+   heights[r]=Math.min(68,Math.max(29,Math.ceil(long)*19+7));r++;
+  }
+  r+=2;
+ }
+ return serializeSheet(rows,merges,[19,28,52,21,21,58,20,23],{zoom:75,heights,last:r});
+}
+function makeInsightsSheet(m){
+ const rows=new Map(),merges=[],heights={},put=(r,c,v,style=3)=>xSheetRow(rows,r,c,v,style);
+ put(1,1,'NETWORK OVERVIEW',1);merges.push('A1:H1');heights[1]=38;
+ put(2,1,`${reportTime(new Date())}   ·   ${m.all.length} affected sites`,11);merges.push('A2:H2');heights[2]=25;
+ const cards=[['Affected sites',m.all.length],['Sites Down',m.by.Down.length],['Power only',m.by.Power.length],['Temperature only',m.by.Temperature.length],['Down Hubs',m.downHub],['Down Terminals',m.by.Down.length-m.downHub],['Blocked Hubs',m.blocked],['Down 24h+',m.old]];
+ cards.forEach(([name,n],i)=>{const row=i<4?4:8,c=(i%4)*2+1;put(row,c,name,2);merges.push(`${col(c)}${row}:${col(c+1)}${row}`);put(row+1,c,n,8);merges.push(`${col(c)}${row+1}:${col(c+1)}${row+1}`);});
+ for(const h of [4,8])heights[h]=29;for(const h of [5,9])heights[h]=39;
+ put(12,1,'AREAS',1);merges.push('A12:D12');put(12,6,'ALARM TYPES',1);merges.push('F12:H12');heights[12]=31;
+ ['Area','Down','Power','Temperature'].forEach((x,i)=>put(13,i+1,x,2));
+ put(13,6,'Alarm',2);put(13,7,'Sites',2);put(13,8,'Category',2);heights[13]=29;
+ m.areas.slice(0,120).forEach((a,i)=>{const r=14+i,sty=i%2?4:3;put(r,1,a.name,sty);put(r,2,a.Down,sty);put(r,3,a.Power,sty);put(r,4,a.Temperature,sty);heights[r]=27;});
+ m.triggers.slice(0,120).forEach(([name,n],i)=>{const r=14+i,sty=i%2?4:3;put(r,6,name,sty);put(r,7,n,sty);const detail=m.all.find(x=>x.alarm===name);put(r,8,detail?.cat||'—',sty);heights[r]=Math.max(heights[r]||27,27);});
+ const tail=15+Math.max(m.areas.length,m.triggers.length,3);
+ put(tail,1,'DOWN DURATION',1);merges.push(`A${tail}:D${tail}`);heights[tail]=29;
+ const buckets=['< 1 hour','1–4 hours','4–24 hours','24h+'];
+ for(let i=0;i<4;i++){put(tail+i+1,1,buckets[i],i%2?4:3);put(tail+i+1,2,mode==='sample'?'—':m.aging[i],i%2?4:3);}
+ put(tail,6,'KPI DEFINITIONS',1);merges.push(`F${tail}:H${tail}`);
+ const meanings=[['Affected sites','Unique Site IDs across active Down/Power/Temp alarms.'],['Sites Down','Active Site Down dump only.'],['Power only','Active power alarm with no active site down.'],['Temperature only','Active temperature alarm with no active site down.'],['Blocked Hubs','Actionable alarms on non-down hubs, excluding SPM.'],['Down 24h+','First Occurred On older than 24 hours.']];
+ meanings.forEach(([name,desc],i)=>{const r=tail+i+1;put(r,6,name,4);put(r,7,desc,9);merges.push(`G${r}:H${r}`);heights[r]=Math.max(heights[r]||24,37);});
+ return serializeSheet(rows,merges,[40,17,17,20,3,38,38,18],{zoom:80,heights,last:tail+8});
+}
+function makePieChart(m){const cats=['Sites Down','Power Issues','Temperature Issues'],nums=[m.by.Down.length,m.by.Power.length,m.by.Temperature.length];const pts=arr=>arr.map((v,i)=>`<c:pt idx="${i}"><c:v>${xesc(v)}</c:v></c:pt>`).join('');
+ const c='http://schemas.openxmlformats.org/drawingml/2006/chart',a='http://schemas.openxmlformats.org/drawingml/2006/main';
+ return`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><c:chartSpace xmlns:c="${c}" xmlns:a="${a}"><c:lang val="en-US"/><c:chart><c:title><c:tx><c:rich><a:bodyPr/><a:lstStyle/><a:p><a:pPr/><a:r><a:rPr lang="en-US" b="1" sz="1400"/><a:t>Issue Distribution</a:t></a:r></a:p></c:rich></c:tx><c:overlay val="0"/></c:title><c:autoTitleDeleted val="0"/><c:plotArea><c:layout/><c:pieChart><c:varyColors val="1"/><c:ser><c:idx val="0"/><c:order val="0"/><c:tx><c:v>Sites by Issue</c:v></c:tx><c:cat><c:strRef><c:f>outage!$J$2:$J$4</c:f><c:strCache><c:ptCount val="3"/>${pts(cats)}</c:strCache></c:strRef></c:cat><c:val><c:numRef><c:f>outage!$K$2:$K$4</c:f><c:numCache><c:formatCode>General</c:formatCode><c:ptCount val="3"/>${pts(nums)}</c:numCache></c:numRef></c:val></c:ser><c:dLbls><c:showLegendKey val="0"/><c:showVal val="1"/><c:showCatName val="1"/><c:showPercent val="1"/></c:dLbls><c:firstSliceAng val="0"/></c:pieChart></c:plotArea><c:legend><c:legendPos val="r"/><c:overlay val="0"/></c:legend><c:plotVisOnly val="1"/></c:chart></c:chartSpace>`;
+}
+function makeDrawing(){return`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><xdr:wsDr xmlns:xdr="http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:c="http://schemas.openxmlformats.org/drawingml/2006/chart" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><xdr:oneCellAnchor><xdr:from><xdr:col>9</xdr:col><xdr:colOff>0</xdr:colOff><xdr:row>5</xdr:row><xdr:rowOff>0</xdr:rowOff></xdr:from><xdr:ext cx="5114920" cy="3619500"/><xdr:graphicFrame macro=""><xdr:nvGraphicFramePr><xdr:cNvPr id="2" name="Issue Distribution"/><xdr:cNvGraphicFramePr/></xdr:nvGraphicFramePr><xdr:xfrm><a:off x="0" y="0"/><a:ext cx="5114920" cy="3619500"/></xdr:xfrm><a:graphic><a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/chart"><c:chart r:id="rId1"/></a:graphicData></a:graphic></xdr:graphicFrame><xdr:clientData/></xdr:oneCellAnchor></xdr:wsDr>`;}
+function makeXlsx(m){
+ const parts={
+  '[Content_Types].xml':`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/><Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/><Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/><Override PartName="/xl/worksheets/sheet2.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/></Types>`,
+  '_rels/.rels':'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>',
+  'xl/workbook.xml':`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><workbook xmlns="${XML}" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><bookViews><workbookView activeTab="0"/></bookViews><sheets><sheet name="outage" sheetId="1" r:id="rId1"/><sheet name="Insights" sheetId="2" r:id="rId2"/></sheets></workbook>`,
+  'xl/_rels/workbook.xml.rels':'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet2.xml"/><Relationship Id="rId3" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>',
+  'xl/styles.xml':styleXML(),
+  'xl/worksheets/sheet1.xml':makeOutageSheet(m),
+  'xl/worksheets/sheet2.xml':makeInsightsSheet(m)
+ };
+ return packZip(parts);
+}
+function packZip(parts){const te=new TextEncoder(),table=new Uint32Array(256);for(let i=0;i<256;i++){let x=i;for(let b=0;b<8;b++)x=(x&1)?(0xedb88320^(x>>>1)):(x>>>1);table[i]=x>>>0;}
+ const p16=(a,x)=>a.push(x&255,x>>>8&255),p32=(a,x)=>a.push(x&255,x>>>8&255,x>>>16&255,x>>>24&255);const crc=b=>{let s=0xffffffff;for(const v of b)s=table[(s^v)&255]^(s>>>8);return(s^0xffffffff)>>>0;};
+ const out=[],central=[];let offset=0;for(const [name,xml]of Object.entries(parts)){const n=te.encode(name),bytes=te.encode(xml),sum=crc(bytes),h=[];p32(h,0x04034b50);p16(h,20);p16(h,0x0800);p16(h,0);p16(h,0);p16(h,0);p32(h,sum);p32(h,bytes.length);p32(h,bytes.length);p16(h,n.length);p16(h,0);const header=new Uint8Array([...h,...n]);out.push(header,bytes);
+  const d=[];p32(d,0x02014b50);p16(d,20);p16(d,20);p16(d,0x0800);p16(d,0);p16(d,0);p16(d,0);p32(d,sum);p32(d,bytes.length);p32(d,bytes.length);p16(d,n.length);p16(d,0);p16(d,0);p16(d,0);p16(d,0);p32(d,0);p32(d,offset);central.push(new Uint8Array([...d,...n]));offset+=header.length+bytes.length;}
+ const len=central.reduce((s,b)=>s+b.length,0),end=[];p32(end,0x06054b50);p16(end,0);p16(end,0);p16(end,central.length);p16(end,central.length);p32(end,len);p32(end,offset);p16(end,0);
+ return new Blob([...out,...central,new Uint8Array(end)],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
+}
+function saveReport(){if(!model){message('Generate dashboard first.','error');return;}
+ try{const blob=makeXlsx(model),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`Outage Dashboard ${new Date().toISOString().slice(0,10)}.xlsx`;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),15000);message('Excel downloaded.','good');}
+ catch(e){window.RANErrorPopup?.show(e,'Outage Dashboard Export');message(e.message||String(e),'error');}
+}
+function init(){const get=(id)=>$(id);if(!get('view-outage'))return;
+ [['odRun',refresh],['odExport',saveReport]].forEach(([id,cb])=>get(id)?.addEventListener('click',cb));
+ get('odModalClose')?.addEventListener('click',closeMetric);get('odModalDone')?.addEventListener('click',closeMetric);get('odModalShow')?.addEventListener('click',modalShowInTable);get('odModal')?.addEventListener('click',e=>{if(e.target.id==='odModal')closeMetric();});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&get('odModal')?.classList.contains('open'))closeMetric();});
+ get('odDonut')?.addEventListener('click',e=>{if(!model)return;const b=e.currentTarget.getBoundingClientRect();const x=e.clientX-b.left-b.width/2,y=e.clientY-b.top-b.height/2;if(Math.hypot(x,y)<b.width*.19){openMetric('kpi','all');return;}const angle=(Math.atan2(y,x)*180/Math.PI+90+360)%360;const total=model.all.length||1,down=model.by.Down.length,temperature=model.by.Temperature.length;openMetric('category',angle<down/total*360?'Down':angle<(down+temperature)/total*360?'Temperature':'Power');});get('odDonut')?.setAttribute('tabindex','0');get('odDonut')?.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openMetric('kpi','all');}});
+ get('odSearch')?.addEventListener('input',e=>{needle=e.target.value.toLowerCase().trim();renderTable();});
+ document.querySelectorAll('#odFilters [data-kind]').forEach(b=>b.addEventListener('click',()=>applyFilter(b.dataset.kind)));document.querySelectorAll('#odKpis [data-kpi]').forEach(b=>b.addEventListener('click',()=>openMetric('kpi',b.dataset.kpi)));
+ document.querySelectorAll('#view-outage th[data-sort]').forEach(el=>el.addEventListener('click',()=>{const key=el.dataset.sort;sortDesc=sortKey===key?!sortDesc:false;sortKey=key;renderTable();}));
+ document.querySelectorAll('[data-tab="outage"]').forEach(b=>b.addEventListener('click',()=>{if(!model&&(window.RANFiles?.get('down')&&window.RANFiles?.get('power')))setTimeout(refresh,90);}));
+ let queued=null;window.addEventListener('ran-files-changed',e=>{if(!['down','power'].includes(e.detail?.group))return;clearTimeout(queued);queued=setTimeout(()=>{if($('view-outage').classList.contains('active'))refresh();else message('Shared alarm export updated. Open this tab to refresh.');},250);});
+ window.addEventListener('ran-master-changed',()=>{if(mode==='live'&&$('view-outage').classList.contains('active'))refresh();});
+ window.addEventListener('ran-site-rules-changed',()=>{if(mode==='live'&&$('view-outage').classList.contains('active'))refresh();});
+ window.OutageDashboard=Object.freeze({refresh,preview:showSample,getData:()=>model,exportExcel:saveReport});
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+})();
+
+</script>
 </body>
 </html>
